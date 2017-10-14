@@ -1,5 +1,5 @@
 //
-//  Swift1.swift
+//  File.swift
 //  Hello World
 //
 //  Created by Dragomir Ivanov on 14.10.17.
@@ -7,7 +7,3 @@
 //
 
 import Foundation
-
-struct Test {
-    
-}

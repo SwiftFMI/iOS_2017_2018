@@ -4,9 +4,9 @@
 
 Ето няколко примера:
 
-![Login](login-example-2.jpg =350x)
+![Login](login-example-2.jpg)
 
-![Login](login-example.jpg =350x)
+![Login](login-example.jpg)
 
 
 Да се отпечатват данните в конзолата при натискане на бутона.

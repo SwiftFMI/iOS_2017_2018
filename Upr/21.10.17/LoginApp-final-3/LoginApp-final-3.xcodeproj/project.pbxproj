@@ -17,7 +17,7 @@
 
 /* Begin PBXFileReference section */
 		1A1074A41F9F313500AFADEF /* SuccessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuccessViewController.swift; sourceTree = "<group>"; };
-		1A2313871F9B3A000001C057 /* SwiftFmi.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftFmi.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A2313871F9B3A000001C057 /* LoginApp-final-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LoginApp-final-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A23138A1F9B3A000001C057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A23138C1F9B3A010001C057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1A23138F1F9B3A010001C057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +40,7 @@
 		1A23137E1F9B3A000001C057 = {
 			isa = PBXGroup;
 			children = (
-				1A2313891F9B3A000001C057 /* SwiftFmi */,
+				1A2313891F9B3A000001C057 /* LoginApp-final-3 */,
 				1A2313881F9B3A000001C057 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,12 +48,12 @@
 		1A2313881F9B3A000001C057 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1A2313871F9B3A000001C057 /* SwiftFmi.app */,
+				1A2313871F9B3A000001C057 /* LoginApp-final-3.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1A2313891F9B3A000001C057 /* SwiftFmi */ = {
+		1A2313891F9B3A000001C057 /* LoginApp-final-3 */ = {
 			isa = PBXGroup;
 			children = (
 				1A23138A1F9B3A000001C057 /* AppDelegate.swift */,
@@ -64,15 +64,15 @@
 				1A2313931F9B3A010001C057 /* LaunchScreen.storyboard */,
 				1A2313961F9B3A010001C057 /* Info.plist */,
 			);
-			path = SwiftFmi;
+			path = "LoginApp-final-3";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1A2313861F9B3A000001C057 /* SwiftFmi */ = {
+		1A2313861F9B3A000001C057 /* LoginApp-final-3 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1A2313991F9B3A010001C057 /* Build configuration list for PBXNativeTarget "SwiftFmi" */;
+			buildConfigurationList = 1A2313991F9B3A010001C057 /* Build configuration list for PBXNativeTarget "LoginApp-final-3" */;
 			buildPhases = (
 				1A2313831F9B3A000001C057 /* Sources */,
 				1A2313841F9B3A000001C057 /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = SwiftFmi;
+			name = "LoginApp-final-3";
 			productName = SwiftFmi;
-			productReference = 1A2313871F9B3A000001C057 /* SwiftFmi.app */;
+			productReference = 1A2313871F9B3A000001C057 /* LoginApp-final-3.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1A2313821F9B3A000001C057 /* Build configuration list for PBXProject "SwiftFmi" */;
+			buildConfigurationList = 1A2313821F9B3A000001C057 /* Build configuration list for PBXProject "LoginApp-final-3" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1A2313861F9B3A000001C057 /* SwiftFmi */,
+				1A2313861F9B3A000001C057 /* LoginApp-final-3 */,
 			);
 		};
 /* End PBXProject section */
@@ -279,10 +279,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SK7QKDG62D;
-				INFOPLIST_FILE = SwiftFmi/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "LoginApp-final-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PH.SwiftFmi;
+				PRODUCT_BUNDLE_IDENTIFIER = "PH.LoginApp-final-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -294,10 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = SK7QKDG62D;
-				INFOPLIST_FILE = SwiftFmi/Info.plist;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "LoginApp-final-3/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = PH.SwiftFmi;
+				PRODUCT_BUNDLE_IDENTIFIER = "PH.LoginApp-final-3";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -307,7 +307,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1A2313821F9B3A000001C057 /* Build configuration list for PBXProject "SwiftFmi" */ = {
+		1A2313821F9B3A000001C057 /* Build configuration list for PBXProject "LoginApp-final-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A2313971F9B3A010001C057 /* Debug */,
@@ -316,7 +316,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1A2313991F9B3A010001C057 /* Build configuration list for PBXNativeTarget "SwiftFmi" */ = {
+		1A2313991F9B3A010001C057 /* Build configuration list for PBXNativeTarget "LoginApp-final-3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1A23139A1F9B3A010001C057 /* Debug */,

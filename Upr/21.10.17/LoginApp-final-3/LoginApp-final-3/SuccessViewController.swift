@@ -11,6 +11,7 @@ import UIKit
 class SuccessViewController: UIViewController {
 
     var labelText = "Empty"
+    var username = "Empty"
     
     @IBOutlet weak var successLabel: UILabel!
     @IBOutlet weak var logOutButton: UIButton!
@@ -26,7 +27,25 @@ class SuccessViewController: UIViewController {
     }
 
     @IBAction func logOutAction(_ sender: Any) {
-        self.dismiss(animated: true) {
+        
+        let controller = self.presentingViewController as! ViewController
+        controller.usernameTextField.text = ""
+        controller.passwordTextField.text = ""
+        
+        self.dismiss(animated: true)
+    }
+    
+    @IBAction func deleteAccount(_ sender: Any) {
+        if (UserDefaults.standard.object(forKey: "userData") != nil)
+        {
+            var userData = UserDefaults.standard.object(forKey: "userData") as! [String : String]
+            userData.removeValue(forKey: username)
+            
+            let controller = self.presentingViewController as! ViewController
+            controller.userData = userData
+            
+            UserDefaults.standard.set(userData, forKey: "userData")
+            self.dismiss(animated: true)
         }
     }
 }

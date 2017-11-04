@@ -16,6 +16,10 @@
 		1A2CEF961FA916C200E407C5 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CEF951FA916C200E407C5 /* Song.swift */; };
 		1A2CEF981FABC17B00E407C5 /* PlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2CEF971FABC17B00E407C5 /* PlayViewController.swift */; };
 		1A2CEF9A1FACB63100E407C5 /* shape.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A2CEF991FACB57700E407C5 /* shape.mp3 */; };
+		1A9C897E1FACCE5A0037C073 /* mask.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C897D1FACCE4D0037C073 /* mask.mp3 */; };
+		1A9C897F1FACCE5A0037C073 /* mind.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C897B1FACCE4C0037C073 /* mind.mp3 */; };
+		1A9C89801FACCE5A0037C073 /* panda.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1A9C897C1FACCE4D0037C073 /* panda.mp3 */; };
+		1A9C89821FACDF820037C073 /* SongManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A9C89811FACDF820037C073 /* SongManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		1A2CEF951FA916C200E407C5 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
 		1A2CEF971FABC17B00E407C5 /* PlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayViewController.swift; sourceTree = "<group>"; };
 		1A2CEF991FACB57700E407C5 /* shape.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = shape.mp3; sourceTree = "<group>"; };
+		1A9C897B1FACCE4C0037C073 /* mind.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mind.mp3; sourceTree = "<group>"; };
+		1A9C897C1FACCE4D0037C073 /* panda.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = panda.mp3; sourceTree = "<group>"; };
+		1A9C897D1FACCE4D0037C073 /* mask.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = mask.mp3; sourceTree = "<group>"; };
+		1A9C89811FACDF820037C073 /* SongManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,18 +70,38 @@
 		1A2CEF801FA912E300E407C5 /* SecondTaskComplexSolution */ = {
 			isa = PBXGroup;
 			children = (
-				1A2CEF811FA912E300E407C5 /* AppDelegate.swift */,
 				1A2CEF831FA912E300E407C5 /* ViewController.swift */,
-				1A2CEF931FA913C000E407C5 /* SongTableViewCell.swift */,
-				1A2CEF851FA912E300E407C5 /* Main.storyboard */,
 				1A2CEF971FABC17B00E407C5 /* PlayViewController.swift */,
-				1A2CEF951FA916C200E407C5 /* Song.swift */,
-				1A2CEF991FACB57700E407C5 /* shape.mp3 */,
+				1A2CEF931FA913C000E407C5 /* SongTableViewCell.swift */,
+				1A9C89831FACE16D0037C073 /* Model */,
+				1A9C897A1FACCC2A0037C073 /* Resources */,
 				1A2CEF881FA912E300E407C5 /* Assets.xcassets */,
+				1A2CEF851FA912E300E407C5 /* Main.storyboard */,
+				1A2CEF811FA912E300E407C5 /* AppDelegate.swift */,
 				1A2CEF8A1FA912E300E407C5 /* LaunchScreen.storyboard */,
 				1A2CEF8D1FA912E300E407C5 /* Info.plist */,
 			);
 			path = SecondTaskComplexSolution;
+			sourceTree = "<group>";
+		};
+		1A9C897A1FACCC2A0037C073 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CEF991FACB57700E407C5 /* shape.mp3 */,
+				1A9C897D1FACCE4D0037C073 /* mask.mp3 */,
+				1A9C897B1FACCE4C0037C073 /* mind.mp3 */,
+				1A9C897C1FACCE4D0037C073 /* panda.mp3 */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1A9C89831FACE16D0037C073 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				1A2CEF951FA916C200E407C5 /* Song.swift */,
+				1A9C89811FACDF820037C073 /* SongManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,6 +163,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9C897E1FACCE5A0037C073 /* mask.mp3 in Resources */,
+				1A9C897F1FACCE5A0037C073 /* mind.mp3 in Resources */,
+				1A9C89801FACCE5A0037C073 /* panda.mp3 in Resources */,
 				1A2CEF9A1FACB63100E407C5 /* shape.mp3 in Resources */,
 				1A2CEF8C1FA912E300E407C5 /* LaunchScreen.storyboard in Resources */,
 				1A2CEF891FA912E300E407C5 /* Assets.xcassets in Resources */,
@@ -149,6 +180,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A9C89821FACDF820037C073 /* SongManager.swift in Sources */,
 				1A2CEF961FA916C200E407C5 /* Song.swift in Sources */,
 				1A2CEF981FABC17B00E407C5 /* PlayViewController.swift in Sources */,
 				1A2CEF941FA913C000E407C5 /* SongTableViewCell.swift in Sources */,

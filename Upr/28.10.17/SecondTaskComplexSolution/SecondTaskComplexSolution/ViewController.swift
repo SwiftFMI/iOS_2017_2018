@@ -8,25 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSource {
+class ViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
     
-
-
     @IBOutlet weak var songListTableView: UITableView!
-    let data : NSMutableArray = []
+    
+    let songManager = SongManager()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let first = Song.init(name: "Shape of you", artist: "Ed Sheran", artwork: "shape")
-        let second = Song.init(name: "Panda", artist: "Desiigner", artwork: "panda")
-        let third = Song.init(name: "Mask off", artist: "Future", artwork: "mask")
-        let fourth = Song.init(name: "Mind", artist: "Skrillex", artwork: "mind")
         
-        data.add(first);
-        data.add(second);
-        data.add(third);
-        data.add(fourth);
         // Do any additional setup after loading the view, typically from a nib.
     }
 
@@ -35,7 +26,7 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
         
         let playVC = self.storyboard?.instantiateViewController(withIdentifier:"playViewController") as! PlayViewController
         
-        playVC.currentSong = data[indexPath.row] as! Song
+        playVC.currentSong = songManager.data[indexPath.row] as! Song
         
         self.navigationController?.pushViewController(playVC, animated: true)
         
@@ -45,13 +36,13 @@ class ViewController: UIViewController, UITableViewDelegate,UITableViewDataSourc
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.count;
+        return songManager.data.count;
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "songCell", for: indexPath) as! SongTableViewCell
-        let myItem = data[indexPath.row] as! Song
+        let myItem = songManager.data[indexPath.row] as! Song
         
         cell.artistNameLabel.text = myItem.artistName
         cell.songNameLabel.text = myItem.name

@@ -99,17 +99,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="44v-Zi-frU">
-                                <rect key="frame" x="67" y="155" width="240" height="240"/>
+                                <rect key="frame" x="37" y="159" width="300" height="300"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="240" id="Hup-Sk-cdd"/>
-                                    <constraint firstAttribute="width" constant="240" id="rwm-9h-2RN"/>
+                                    <constraint firstAttribute="width" secondItem="44v-Zi-frU" secondAttribute="height" multiplier="1:1" id="rPr-Ua-mSR"/>
                                 </constraints>
                             </imageView>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="UzE-r7-HjR">
-                                <rect key="frame" x="87.5" y="474" width="200" height="30"/>
+                                <rect key="frame" x="35.5" y="575" width="304" height="30"/>
                                 <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="196" id="Jfa-e9-X2w"/>
                                     <constraint firstAttribute="height" constant="29" id="WMh-Xa-PFd"/>
                                 </constraints>
                                 <connections>
@@ -117,41 +115,65 @@
                                 </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kcu-gj-TB8">
-                                <rect key="frame" x="150.5" y="54.5" width="75.5" height="38.5"/>
+                                <rect key="frame" x="150.5" y="58.5" width="75.5" height="38.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="32"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U0u-JW-Q5v">
-                                <rect key="frame" x="164.5" y="101" width="48" height="24"/>
+                                <rect key="frame" x="164.5" y="105" width="48" height="24"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BTS-9X-Vce">
-                                <rect key="frame" x="166" y="415" width="44" height="44"/>
+                                <rect key="frame" x="155" y="489" width="66" height="66"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="44" id="AXE-GF-mFf"/>
-                                    <constraint firstAttribute="height" constant="44" id="Wwt-3t-Say"/>
+                                    <constraint firstAttribute="width" constant="66" id="AXE-GF-mFf"/>
+                                    <constraint firstAttribute="width" secondItem="BTS-9X-Vce" secondAttribute="height" multiplier="1:1" id="uRa-aM-EUJ"/>
                                 </constraints>
                                 <state key="normal" image="play"/>
                                 <connections>
                                     <action selector="playPauseButtonAction:" destination="xlf-q7-0uL" eventType="touchUpInside" id="yvE-l9-Qil"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VHv-Cd-58f">
+                                <rect key="frame" x="229" y="489" width="66" height="66"/>
+                                <state key="normal" image="next"/>
+                                <connections>
+                                    <action selector="nextTrackButtonAction:" destination="xlf-q7-0uL" eventType="touchUpInside" id="2X2-Vc-ysm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FxM-K8-Imc">
+                                <rect key="frame" x="81" y="489" width="66" height="66"/>
+                                <state key="normal" title="Button" image="prev"/>
+                                <connections>
+                                    <action selector="previousTrackButtonAction:" destination="xlf-q7-0uL" eventType="touchUpInside" id="lT9-0u-kD5"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="BTS-9X-Vce" firstAttribute="centerX" secondItem="2D9-xL-tff" secondAttribute="centerX" id="3Fu-Cr-v8y"/>
+                            <constraint firstItem="VHv-Cd-58f" firstAttribute="height" secondItem="BTS-9X-Vce" secondAttribute="height" id="3fW-zF-HM4"/>
                             <constraint firstItem="U0u-JW-Q5v" firstAttribute="centerX" secondItem="Kcu-gj-TB8" secondAttribute="centerX" id="A3X-li-5Bx"/>
+                            <constraint firstItem="FxM-K8-Imc" firstAttribute="height" secondItem="BTS-9X-Vce" secondAttribute="height" id="CTw-Z0-oP3"/>
+                            <constraint firstItem="FxM-K8-Imc" firstAttribute="width" secondItem="BTS-9X-Vce" secondAttribute="width" id="F5e-7Y-X8O"/>
                             <constraint firstItem="Kcu-gj-TB8" firstAttribute="centerX" secondItem="2D9-xL-tff" secondAttribute="centerX" id="Pay-Zj-CRZ"/>
                             <constraint firstItem="44v-Zi-frU" firstAttribute="top" secondItem="U0u-JW-Q5v" secondAttribute="bottom" constant="30" id="PdH-D6-pni"/>
-                            <constraint firstItem="BTS-9X-Vce" firstAttribute="top" secondItem="44v-Zi-frU" secondAttribute="bottom" constant="20" id="UUT-JL-NIy"/>
-                            <constraint firstItem="UzE-r7-HjR" firstAttribute="top" secondItem="BTS-9X-Vce" secondAttribute="bottom" constant="15" id="ZNz-xb-2i8"/>
+                            <constraint firstItem="BTS-9X-Vce" firstAttribute="top" secondItem="44v-Zi-frU" secondAttribute="bottom" constant="30" id="UUT-JL-NIy"/>
+                            <constraint firstItem="VHv-Cd-58f" firstAttribute="leading" secondItem="BTS-9X-Vce" secondAttribute="trailing" constant="8" id="V7t-MB-fAX"/>
+                            <constraint firstItem="UzE-r7-HjR" firstAttribute="top" secondItem="BTS-9X-Vce" secondAttribute="bottom" constant="20" id="ZNz-xb-2i8"/>
                             <constraint firstItem="UzE-r7-HjR" firstAttribute="centerX" secondItem="2D9-xL-tff" secondAttribute="centerX" id="bG5-6O-tX3"/>
-                            <constraint firstItem="44v-Zi-frU" firstAttribute="centerY" secondItem="2D9-xL-tff" secondAttribute="centerY" multiplier="0.8" id="cQV-us-5rd"/>
+                            <constraint firstItem="44v-Zi-frU" firstAttribute="centerY" secondItem="2D9-xL-tff" secondAttribute="centerY" multiplier="0.9" id="cQV-us-5rd"/>
+                            <constraint firstItem="BTS-9X-Vce" firstAttribute="leading" secondItem="FxM-K8-Imc" secondAttribute="trailing" constant="8" id="h3Y-97-wPp"/>
                             <constraint firstItem="44v-Zi-frU" firstAttribute="centerX" secondItem="2D9-xL-tff" secondAttribute="centerX" id="itC-Ud-NqU"/>
                             <constraint firstItem="U0u-JW-Q5v" firstAttribute="top" secondItem="Kcu-gj-TB8" secondAttribute="bottom" constant="8" id="krc-Vc-RPX"/>
+                            <constraint firstItem="UzE-r7-HjR" firstAttribute="width" secondItem="JPO-cX-uxh" secondAttribute="width" multiplier="0.8" id="oPK-g4-vXL"/>
+                            <constraint firstItem="FxM-K8-Imc" firstAttribute="centerY" secondItem="BTS-9X-Vce" secondAttribute="centerY" id="ov0-Op-A8j"/>
+                            <constraint firstItem="VHv-Cd-58f" firstAttribute="width" secondItem="BTS-9X-Vce" secondAttribute="width" id="qxy-9e-H4a"/>
+                            <constraint firstItem="44v-Zi-frU" firstAttribute="width" secondItem="JPO-cX-uxh" secondAttribute="width" multiplier="0.8" id="rRW-TV-UxT"/>
+                            <constraint firstItem="VHv-Cd-58f" firstAttribute="centerY" secondItem="BTS-9X-Vce" secondAttribute="centerY" id="vFX-FK-n4v"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2D9-xL-tff"/>
                     </view>
@@ -187,6 +209,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="next" width="256" height="256"/>
         <image name="play" width="64" height="64"/>
+        <image name="prev" width="256" height="256"/>
     </resources>
 </document>

@@ -20,13 +20,15 @@ class PlayViewController: UIViewController {
     @IBOutlet weak var playPauseButton: UIButton!
 
     @IBOutlet weak var volumeSlider: UISlider!
+    
+
     var currentSong : Song = Song()
     var playing : Bool = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.title = currentSong.name
+        self.title = "Now Playing"
 
         self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "Back", style: UIBarButtonItemStyle.done, target: self, action: #selector(back))
         
@@ -47,21 +49,25 @@ class PlayViewController: UIViewController {
         playing = !playing
         if (playing)
         {
-                let soundFile = Bundle.main.path(forResource: "shape", ofType: "mp3")
-                let url = URL(fileURLWithPath: soundFile!)
-                appDelegate.mAudioPlayer = try! AVAudioPlayer(contentsOf: url as URL)
-                appDelegate.mAudioPlayer?.play()
+            let soundFile = Bundle.main.path(forResource: currentSong.artworkImageName, ofType: "mp3")
+            let url = URL(fileURLWithPath: soundFile!)
+            appDelegate.mAudioPlayer = try! AVAudioPlayer(contentsOf: url as URL)
+            appDelegate.mAudioPlayer?.play()
             
-            playPauseButton.setImage(UIImage.init(named: "pause")
-                , for: UIControlState.normal)
+            playPauseButton.setImage(UIImage.init(named: "pause"), for: UIControlState.normal)
         }
         else
         {
             appDelegate.mAudioPlayer?.pause();
             
             self.playPauseButton.setImage(UIImage.init(named: "play"), for: UIControlState.normal)
-            }
+        }
     }
+    @IBAction func previousTrackButtonAction(_ sender: Any) {
+    }
+    @IBAction func nextTrackButtonAction(_ sender: Any) {
+    }
+    
     @IBAction func volumeChanged(_ sender: Any) {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         

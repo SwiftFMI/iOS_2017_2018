@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var controlCenterView: UIView!
-    
+    var blurEffectView = UIVisualEffectView()
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -23,14 +24,20 @@ class ViewController: UIViewController {
         
         // Добавяме замъглен ефект
         let blurEffect = UIBlurEffect(style: .light)
-        let blurEffectView = UIVisualEffectView(effect: blurEffect)
+        blurEffectView = UIVisualEffectView(effect: blurEffect)
 
         blurEffectView.frame = controlCenterView.bounds
-        
+        blurEffectView.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         // По този начин се уверяваме, че замъгленият ефект ще бъде добавен под всички останали subview-та на controlCenterView
         controlCenterView.insertSubview(blurEffectView, at: 0)
+//        NotificationCenter.default.addObserver(self, selector: #selector(rotated), name: NSNotification.Name.UIDeviceOrientationDidChange, object: nil)
     }
 
+    @objc func rotated() -> Void {
+//        blurEffectView.frame = controlCenterView.bounds
+//        blurEffectView.autoresizingMask =
+    }
+    
     @IBAction func iconAction(_ sender: UIButton) {
         sender.isSelected = !sender.isSelected
     }

@@ -386,6 +386,7 @@
                             <constraint firstItem="hIc-lk-E9R" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="v7D-EN-vaI"/>
                             <constraint firstItem="hIc-lk-E9R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xzP-al-nYf"/>
                         </constraints>
+                        <viewLayoutGuide key="safeArea" id="mD7-Sm-j3n"/>
                     </view>
                     <connections>
                         <outlet property="controlCenterView" destination="uuA-7I-IWn" id="Xqq-tC-lpO"/>

@@ -285,6 +285,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QHP2HS2D;
 				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -300,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 49QHP2HS2D;
 				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto;
 				PRODUCT_NAME = "$(TARGET_NAME)";

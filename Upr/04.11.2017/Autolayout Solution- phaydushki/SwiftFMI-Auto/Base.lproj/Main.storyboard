@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwiftFMI_Auto" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-lk-E9R">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-7I-IWn">
+                                <rect key="frame" x="20" y="247" width="335" height="400"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dfc-SL-rw9" userLabel="Wifi" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="8.5" y="20" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="Tou-WY-8Rt"/>
+                                            <constraint firstAttribute="width" constant="50" id="shX-8m-ofN"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.21046560402684564" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="wifi"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GZI-ug-CQ9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oDq-Uf-seU" userLabel="Airplane" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="75.5" y="20" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="airplane"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ZQy-rY-aEH"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sfe-Gc-zHm" userLabel="Bluetooth" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="142.5" y="20" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="bluetooth"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Fxg-SA-S0f"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q44-G1-QnX" userLabel="Night" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="209.5" y="20" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="moon"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sdd-GV-M3F"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QzQ-uu-sv6" userLabel="Orientation" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="276.5" y="20" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="25"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="orientation"/>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="iconAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="huM-0I-bOe"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="ZYM-3X-0z0">
+                                        <rect key="frame" x="13" y="95.5" width="30" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="30" id="EOk-Bl-R3A"/>
+                                            <constraint firstAttribute="height" constant="30" id="OTZ-Mr-VYg"/>
+                                        </constraints>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="JJg-SN-lsx">
+                                        <rect key="frame" x="49" y="96" width="238.5" height="31"/>
+                                        <color key="minimumTrackTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="maximumTrackTintColor" white="0.0" alpha="0.80000000000000004" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </slider>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sun" translatesAutoresizingMaskIntoConstraints="NO" id="t53-rg-giI">
+                                        <rect key="frame" x="293.5" y="96.5" width="30" height="30"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8d-jc-KEy" userLabel="AirDrop" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="146" width="285" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="gC7-Iw-ZaE"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="AirDrop: Everyone"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MnW-Bm-ypa" customClass="TintedImageView" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="153" width="30" height="30"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="n8T-6B-pnB"/>
+                                            <constraint firstAttribute="width" constant="30" id="nbl-ql-cWy"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="airdrop"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MSK-Sx-qkd" userLabel="NightShift" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="25" y="210" width="285" height="44"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="44" id="AER-I1-9Q6"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <state key="normal" title="Night Shift: On untill sunrise"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Djl-nE-BdJ" userLabel="Flashlight" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="25.5" y="330" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="WDK-Nr-oY4"/>
+                                            <constraint firstAttribute="width" constant="50" id="jh3-lU-noT"/>
+                                        </constraints>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="flashlight"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQs-TX-h7n" userLabel="Timer" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="92.5" y="330" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="timer"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xsk-SC-CQy" userLabel="Camera" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="260" y="330" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="camera"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="l7C-MX-jgK" customClass="TintedImageView" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="33" y="222" width="20" height="20"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="20" id="EYh-Sz-P3Y"/>
+                                            <constraint firstAttribute="height" constant="20" id="U8g-B2-I62"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="nightshift"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncd-hD-IbK" userLabel="Calculator" customClass="HighlitedButton" customModule="SwiftFMI_Auto" customModuleProvider="target">
+                                        <rect key="frame" x="176" y="330" width="50" height="50"/>
+                                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <inset key="imageEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="normalColor">
+                                                <color key="value" red="0.0" green="0.0" blue="0.0" alpha="0.20000000000000001" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="selectedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="highlitedColor">
+                                                <color key="value" red="0.0" green="0.47843137250000001" blue="1" alpha="0.210465604" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="icon" value="calculator"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="t53-rg-giI" firstAttribute="width" secondItem="ZYM-3X-0z0" secondAttribute="width" id="0gp-KA-7zc"/>
+                                    <constraint firstItem="Djl-nE-BdJ" firstAttribute="height" secondItem="DQs-TX-h7n" secondAttribute="height" id="1Or-jb-v37"/>
+                                    <constraint firstItem="oDq-Uf-seU" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="0.6" id="2dg-5u-HR8"/>
+                                    <constraint firstItem="t53-rg-giI" firstAttribute="centerY" secondItem="JJg-SN-lsx" secondAttribute="centerY" id="5a4-s2-2xg"/>
+                                    <constraint firstItem="sfe-Gc-zHm" firstAttribute="height" secondItem="dfc-SL-rw9" secondAttribute="height" id="7Xs-rX-F6A"/>
+                                    <constraint firstItem="t53-rg-giI" firstAttribute="leading" secondItem="JJg-SN-lsx" secondAttribute="trailing" constant="8" id="8aq-Jx-55Q"/>
+                                    <constraint firstItem="sfe-Gc-zHm" firstAttribute="centerY" secondItem="q44-G1-QnX" secondAttribute="centerY" id="8qi-pC-sgY"/>
+                                    <constraint firstItem="DQs-TX-h7n" firstAttribute="height" secondItem="ncd-hD-IbK" secondAttribute="height" id="9V9-ze-RjE"/>
+                                    <constraint firstItem="s8d-jc-KEy" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" id="ARO-DA-KjT"/>
+                                    <constraint firstItem="JJg-SN-lsx" firstAttribute="leading" secondItem="ZYM-3X-0z0" secondAttribute="trailing" constant="8" id="ISj-lc-3eV"/>
+                                    <constraint firstItem="t53-rg-giI" firstAttribute="height" secondItem="ZYM-3X-0z0" secondAttribute="height" id="IVb-6L-5Y4"/>
+                                    <constraint firstItem="Djl-nE-BdJ" firstAttribute="width" secondItem="DQs-TX-h7n" secondAttribute="width" id="IvD-bS-qdd"/>
+                                    <constraint firstItem="oDq-Uf-seU" firstAttribute="centerY" secondItem="sfe-Gc-zHm" secondAttribute="centerY" id="J97-Cb-HWu"/>
+                                    <constraint firstItem="q44-G1-QnX" firstAttribute="width" secondItem="dfc-SL-rw9" secondAttribute="width" id="KV9-RV-ceQ"/>
+                                    <constraint firstItem="dfc-SL-rw9" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="0.2" id="KYe-Il-QTo"/>
+                                    <constraint firstItem="JJg-SN-lsx" firstAttribute="width" secondItem="uuA-7I-IWn" secondAttribute="width" multiplier="0.7" id="KmL-bq-hlB"/>
+                                    <constraint firstItem="QzQ-uu-sv6" firstAttribute="height" secondItem="dfc-SL-rw9" secondAttribute="height" id="MXR-NA-KhK"/>
+                                    <constraint firstItem="q44-G1-QnX" firstAttribute="centerY" secondItem="QzQ-uu-sv6" secondAttribute="centerY" id="Mze-VM-yyK"/>
+                                    <constraint firstItem="sfe-Gc-zHm" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" id="PAh-ny-FuX"/>
+                                    <constraint firstAttribute="bottom" secondItem="Djl-nE-BdJ" secondAttribute="bottom" constant="20" id="Pag-rq-Pu2">
+                                        <variation key="heightClass=compact" constant="15"/>
+                                    </constraint>
+                                    <constraint firstItem="q44-G1-QnX" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="1.4" id="SZg-ff-dkw"/>
+                                    <constraint firstItem="JJg-SN-lsx" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" id="Uq1-lw-I7j"/>
+                                    <constraint firstItem="Djl-nE-BdJ" firstAttribute="centerY" secondItem="DQs-TX-h7n" secondAttribute="centerY" id="VKH-iv-XxA"/>
+                                    <constraint firstItem="ncd-hD-IbK" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="1.2" id="VXL-Ac-LhL"/>
+                                    <constraint firstItem="ZYM-3X-0z0" firstAttribute="centerY" secondItem="JJg-SN-lsx" secondAttribute="centerY" id="Vgd-68-l5Y"/>
+                                    <constraint firstItem="Djl-nE-BdJ" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="0.3" id="VrG-tP-lyq"/>
+                                    <constraint firstItem="l7C-MX-jgK" firstAttribute="leading" secondItem="MSK-Sx-qkd" secondAttribute="leading" constant="8" id="XO1-YR-n8W"/>
+                                    <constraint firstItem="MnW-Bm-ypa" firstAttribute="leading" secondItem="s8d-jc-KEy" secondAttribute="leading" constant="8" id="YJC-c3-RVn"/>
+                                    <constraint firstItem="MSK-Sx-qkd" firstAttribute="width" secondItem="uuA-7I-IWn" secondAttribute="width" multiplier="0.85" id="ZXr-jW-CIA"/>
+                                    <constraint firstItem="DQs-TX-h7n" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="0.7" id="ZZB-JM-haM"/>
+                                    <constraint firstItem="s8d-jc-KEy" firstAttribute="width" secondItem="MSK-Sx-qkd" secondAttribute="width" id="ZuS-a7-g4h"/>
+                                    <constraint firstItem="oDq-Uf-seU" firstAttribute="width" secondItem="dfc-SL-rw9" secondAttribute="width" id="abD-na-Z5T"/>
+                                    <constraint firstItem="MnW-Bm-ypa" firstAttribute="centerY" secondItem="s8d-jc-KEy" secondAttribute="centerY" id="cIM-Ob-2BL"/>
+                                    <constraint firstItem="QzQ-uu-sv6" firstAttribute="width" secondItem="dfc-SL-rw9" secondAttribute="width" id="dqz-aB-F8s"/>
+                                    <constraint firstItem="dfc-SL-rw9" firstAttribute="top" secondItem="uuA-7I-IWn" secondAttribute="top" constant="20" id="ffJ-wz-ndf"/>
+                                    <constraint firstItem="MSK-Sx-qkd" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" id="fqH-hy-A3B"/>
+                                    <constraint firstItem="q44-G1-QnX" firstAttribute="height" secondItem="dfc-SL-rw9" secondAttribute="height" id="iVW-4k-1q0"/>
+                                    <constraint firstItem="oDq-Uf-seU" firstAttribute="height" secondItem="dfc-SL-rw9" secondAttribute="height" id="jGC-1e-ZZg"/>
+                                    <constraint firstItem="MSK-Sx-qkd" firstAttribute="top" secondItem="s8d-jc-KEy" secondAttribute="bottom" constant="20" id="lBG-do-jkL"/>
+                                    <constraint firstItem="ncd-hD-IbK" firstAttribute="width" secondItem="Xsk-SC-CQy" secondAttribute="width" id="lgY-tX-ncg"/>
+                                    <constraint firstItem="JJg-SN-lsx" firstAttribute="top" secondItem="sfe-Gc-zHm" secondAttribute="bottom" constant="26" id="mlf-Cj-zoZ">
+                                        <variation key="heightClass=compact" constant="26"/>
+                                    </constraint>
+                                    <constraint firstItem="DQs-TX-h7n" firstAttribute="width" secondItem="ncd-hD-IbK" secondAttribute="width" id="okI-Lh-1Z8"/>
+                                    <constraint firstItem="Xsk-SC-CQy" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="1.7" id="p3p-52-4AK"/>
+                                    <constraint firstItem="dfc-SL-rw9" firstAttribute="centerY" secondItem="oDq-Uf-seU" secondAttribute="centerY" id="tDt-rb-ybR"/>
+                                    <constraint firstItem="ncd-hD-IbK" firstAttribute="height" secondItem="Xsk-SC-CQy" secondAttribute="height" id="tXI-9A-Ofd"/>
+                                    <constraint firstItem="DQs-TX-h7n" firstAttribute="centerY" secondItem="ncd-hD-IbK" secondAttribute="centerY" id="tYP-1d-nvg"/>
+                                    <constraint firstItem="QzQ-uu-sv6" firstAttribute="centerX" secondItem="uuA-7I-IWn" secondAttribute="centerX" multiplier="1.8" id="w9g-sK-FE9"/>
+                                    <constraint firstItem="ncd-hD-IbK" firstAttribute="centerY" secondItem="Xsk-SC-CQy" secondAttribute="centerY" id="wXE-aF-zaa"/>
+                                    <constraint firstItem="sfe-Gc-zHm" firstAttribute="width" secondItem="dfc-SL-rw9" secondAttribute="width" id="yBw-vN-u5u"/>
+                                    <constraint firstItem="s8d-jc-KEy" firstAttribute="top" secondItem="JJg-SN-lsx" secondAttribute="bottom" constant="20" id="yd7-1w-NPk"/>
+                                    <constraint firstItem="l7C-MX-jgK" firstAttribute="centerY" secondItem="MSK-Sx-qkd" secondAttribute="centerY" id="zqY-D2-fnl"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="uuA-7I-IWn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="59O-mo-56Y"/>
+                            <constraint firstItem="uuA-7I-IWn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QcK-sO-GVg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uuA-7I-IWn" secondAttribute="bottom" constant="20" id="fzv-jH-44v"/>
+                            <constraint firstItem="uuA-7I-IWn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="lLx-Xp-EKr">
+                                <variation key="heightClass=compact" constant="100"/>
+                            </constraint>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="controlCenterView" destination="uuA-7I-IWn" id="Xqq-tC-lpO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="133.5832083958021"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="airdrop" width="128" height="128"/>
+        <image name="airplane" width="1600" height="1600"/>
+        <image name="background" width="960" height="600"/>
+        <image name="bluetooth" width="2000" height="2000"/>
+        <image name="calculator" width="128" height="128"/>
+        <image name="camera" width="128" height="128"/>
+        <image name="flashlight" width="128" height="128"/>
+        <image name="moon" width="300" height="300"/>
+        <image name="nightshift" width="128" height="128"/>
+        <image name="orientation" width="128" height="128"/>
+        <image name="sun" width="256" height="256"/>
+        <image name="timer" width="128" height="128"/>
+        <image name="wifi" width="512" height="512"/>
+    </resources>
+</document>

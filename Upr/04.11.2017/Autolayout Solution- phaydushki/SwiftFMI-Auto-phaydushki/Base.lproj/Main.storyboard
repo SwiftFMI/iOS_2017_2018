@@ -18,9 +18,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-lk-E9R">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="hIc-lk-E9R">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <viewLayoutGuide key="safeArea" id="uKd-bP-j20"/>
                             </imageView>
                             <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uuA-7I-IWn">
                                 <rect key="frame" x="20" y="247" width="335" height="400"/>
@@ -376,13 +376,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="uuA-7I-IWn" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" constant="-40" id="59O-mo-56Y"/>
-                            <constraint firstItem="uuA-7I-IWn" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="QcK-sO-GVg"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uuA-7I-IWn" secondAttribute="bottom" constant="20" id="fzv-jH-44v"/>
+                            <constraint firstItem="hIc-lk-E9R" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="6H4-Xs-GR9"/>
+                            <constraint firstItem="uuA-7I-IWn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QcK-sO-GVg"/>
+                            <constraint firstItem="hIc-lk-E9R" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XcY-ex-Syt"/>
+                            <constraint firstAttribute="bottom" secondItem="uuA-7I-IWn" secondAttribute="bottom" constant="20" id="fzv-jH-44v"/>
                             <constraint firstItem="uuA-7I-IWn" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.6" id="lLx-Xp-EKr">
                                 <variation key="heightClass=compact" constant="100"/>
                             </constraint>
+                            <constraint firstItem="hIc-lk-E9R" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="v7D-EN-vaI"/>
+                            <constraint firstItem="hIc-lk-E9R" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="xzP-al-nYf"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="controlCenterView" destination="uuA-7I-IWn" id="Xqq-tC-lpO"/>

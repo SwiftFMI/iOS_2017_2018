@@ -42,7 +42,7 @@
 		17E754F71FACC4F40023104F = {
 			isa = PBXGroup;
 			children = (
-				17E755021FACC4F50023104F /* SwiftFMI-Auto */,
+				17E755021FACC4F50023104F /* SwiftFMI-Auto-phaydushki */,
 				17E755011FACC4F50023104F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17E755021FACC4F50023104F /* SwiftFMI-Auto */ = {
+		17E755021FACC4F50023104F /* SwiftFMI-Auto-phaydushki */ = {
 			isa = PBXGroup;
 			children = (
 				17E755031FACC4F50023104F /* AppDelegate.swift */,
@@ -67,7 +67,7 @@
 				17E7550C1FACC4F50023104F /* LaunchScreen.storyboard */,
 				17E7550F1FACC4F50023104F /* Info.plist */,
 			);
-			path = "SwiftFMI-Auto";
+			path = "SwiftFMI-Auto-phaydushki";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -106,7 +106,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto" */;
+			buildConfigurationList = 17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto-phaydushki" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -285,10 +285,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SK7QKDG62D;
-				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
+				INFOPLIST_FILE = "SwiftFMI-Auto-phaydushki/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spasbilyarski.SwiftFMIAuto-phaydushki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -303,10 +303,10 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = SK7QKDG62D;
-				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
+				INFOPLIST_FILE = "SwiftFMI-Auto-phaydushki/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.spasbilyarski.SwiftFMIAuto-phaydushki";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
@@ -317,7 +317,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto" */ = {
+		17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto-phaydushki" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				17E755101FACC4F50023104F /* Debug */,

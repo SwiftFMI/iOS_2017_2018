@@ -7,29 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		17E755041FACC4F50023104F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E755031FACC4F50023104F /* AppDelegate.swift */; };
-		17E755061FACC4F50023104F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E755051FACC4F50023104F /* ViewController.swift */; };
-		17E755091FACC4F50023104F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E755071FACC4F50023104F /* Main.storyboard */; };
-		17E7550B1FACC4F50023104F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17E7550A1FACC4F50023104F /* Assets.xcassets */; };
-		17E7550E1FACC4F50023104F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17E7550C1FACC4F50023104F /* LaunchScreen.storyboard */; };
-		17E755161FAD0BE00023104F /* HighlitedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E755151FAD0BE00023104F /* HighlitedButton.swift */; };
-		17E755181FAD1BDC0023104F /* TintedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17E755171FAD1BDC0023104F /* TintedImageView.swift */; };
+		20AF69391FB5FCBB00A31BBF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AF69381FB5FCBB00A31BBF /* AppDelegate.swift */; };
+		20AF693B1FB5FCBB00A31BBF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20AF693A1FB5FCBB00A31BBF /* ViewController.swift */; };
+		20AF693E1FB5FCBB00A31BBF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AF693C1FB5FCBB00A31BBF /* Main.storyboard */; };
+		20AF69401FB5FCBC00A31BBF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20AF693F1FB5FCBC00A31BBF /* Assets.xcassets */; };
+		20AF69431FB5FCBC00A31BBF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20AF69411FB5FCBC00A31BBF /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		17E755001FACC4F50023104F /* SwiftFMI-Auto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftFMI-Auto.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		17E755031FACC4F50023104F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		17E755051FACC4F50023104F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		17E755081FACC4F50023104F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		17E7550A1FACC4F50023104F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		17E7550D1FACC4F50023104F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		17E7550F1FACC4F50023104F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17E755151FAD0BE00023104F /* HighlitedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighlitedButton.swift; sourceTree = "<group>"; };
-		17E755171FAD1BDC0023104F /* TintedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TintedImageView.swift; sourceTree = "<group>"; };
+		20AF69351FB5FCBB00A31BBF /* UITableView Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "UITableView Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		20AF69381FB5FCBB00A31BBF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		20AF693A1FB5FCBB00A31BBF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		20AF693D1FB5FCBB00A31BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		20AF693F1FB5FCBC00A31BBF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		20AF69421FB5FCBC00A31BBF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		20AF69441FB5FCBC00A31BBF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		17E754FD1FACC4F50023104F /* Frameworks */ = {
+		20AF69321FB5FCBB00A31BBF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,74 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		17E754F71FACC4F40023104F = {
+		20AF692C1FB5FCBB00A31BBF = {
 			isa = PBXGroup;
 			children = (
-				17E755021FACC4F50023104F /* SwiftFMI-Auto */,
-				17E755011FACC4F50023104F /* Products */,
+				20AF69371FB5FCBB00A31BBF /* UITableView Demo */,
+				20AF69361FB5FCBB00A31BBF /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		17E755011FACC4F50023104F /* Products */ = {
+		20AF69361FB5FCBB00A31BBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				17E755001FACC4F50023104F /* SwiftFMI-Auto.app */,
+				20AF69351FB5FCBB00A31BBF /* UITableView Demo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		17E755021FACC4F50023104F /* SwiftFMI-Auto */ = {
+		20AF69371FB5FCBB00A31BBF /* UITableView Demo */ = {
 			isa = PBXGroup;
 			children = (
-				17E755031FACC4F50023104F /* AppDelegate.swift */,
-				17E755051FACC4F50023104F /* ViewController.swift */,
-				17E755151FAD0BE00023104F /* HighlitedButton.swift */,
-				17E755171FAD1BDC0023104F /* TintedImageView.swift */,
-				17E755071FACC4F50023104F /* Main.storyboard */,
-				17E7550A1FACC4F50023104F /* Assets.xcassets */,
-				17E7550C1FACC4F50023104F /* LaunchScreen.storyboard */,
-				17E7550F1FACC4F50023104F /* Info.plist */,
+				20AF69381FB5FCBB00A31BBF /* AppDelegate.swift */,
+				20AF693A1FB5FCBB00A31BBF /* ViewController.swift */,
+				20AF693C1FB5FCBB00A31BBF /* Main.storyboard */,
+				20AF693F1FB5FCBC00A31BBF /* Assets.xcassets */,
+				20AF69411FB5FCBC00A31BBF /* LaunchScreen.storyboard */,
+				20AF69441FB5FCBC00A31BBF /* Info.plist */,
 			);
-			path = "SwiftFMI-Auto";
+			path = "UITableView Demo";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		17E754FF1FACC4F50023104F /* SwiftFMI-Auto */ = {
+		20AF69341FB5FCBB00A31BBF /* UITableView Demo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 17E755121FACC4F50023104F /* Build configuration list for PBXNativeTarget "SwiftFMI-Auto" */;
+			buildConfigurationList = 20AF69471FB5FCBC00A31BBF /* Build configuration list for PBXNativeTarget "UITableView Demo" */;
 			buildPhases = (
-				17E754FC1FACC4F50023104F /* Sources */,
-				17E754FD1FACC4F50023104F /* Frameworks */,
-				17E754FE1FACC4F50023104F /* Resources */,
+				20AF69311FB5FCBB00A31BBF /* Sources */,
+				20AF69321FB5FCBB00A31BBF /* Frameworks */,
+				20AF69331FB5FCBB00A31BBF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "SwiftFMI-Auto";
-			productName = "SwiftFMI-Auto";
-			productReference = 17E755001FACC4F50023104F /* SwiftFMI-Auto.app */;
+			name = "UITableView Demo";
+			productName = "UITableView Demo";
+			productReference = 20AF69351FB5FCBB00A31BBF /* UITableView Demo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		17E754F81FACC4F40023104F /* Project object */ = {
+		20AF692D1FB5FCBB00A31BBF /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0910;
-				LastUpgradeCheck = 0910;
-				ORGANIZATIONNAME = spasbilyarski;
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = SwiftFMI;
 				TargetAttributes = {
-					17E754FF1FACC4F50023104F = {
-						CreatedOnToolsVersion = 9.1;
+					20AF69341FB5FCBB00A31BBF = {
+						CreatedOnToolsVersion = 9.0.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto" */;
+			buildConfigurationList = 20AF69301FB5FCBB00A31BBF /* Build configuration list for PBXProject "UITableView Demo" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -114,56 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 17E754F71FACC4F40023104F;
-			productRefGroup = 17E755011FACC4F50023104F /* Products */;
+			mainGroup = 20AF692C1FB5FCBB00A31BBF;
+			productRefGroup = 20AF69361FB5FCBB00A31BBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				17E754FF1FACC4F50023104F /* SwiftFMI-Auto */,
+				20AF69341FB5FCBB00A31BBF /* UITableView Demo */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		17E754FE1FACC4F50023104F /* Resources */ = {
+		20AF69331FB5FCBB00A31BBF /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E7550E1FACC4F50023104F /* LaunchScreen.storyboard in Resources */,
-				17E7550B1FACC4F50023104F /* Assets.xcassets in Resources */,
-				17E755091FACC4F50023104F /* Main.storyboard in Resources */,
+				20AF69431FB5FCBC00A31BBF /* LaunchScreen.storyboard in Resources */,
+				20AF69401FB5FCBC00A31BBF /* Assets.xcassets in Resources */,
+				20AF693E1FB5FCBB00A31BBF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		17E754FC1FACC4F50023104F /* Sources */ = {
+		20AF69311FB5FCBB00A31BBF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				17E755061FACC4F50023104F /* ViewController.swift in Sources */,
-				17E755161FAD0BE00023104F /* HighlitedButton.swift in Sources */,
-				17E755181FAD1BDC0023104F /* TintedImageView.swift in Sources */,
-				17E755041FACC4F50023104F /* AppDelegate.swift in Sources */,
+				20AF693B1FB5FCBB00A31BBF /* ViewController.swift in Sources */,
+				20AF69391FB5FCBB00A31BBF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		17E755071FACC4F50023104F /* Main.storyboard */ = {
+		20AF693C1FB5FCBB00A31BBF /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				17E755081FACC4F50023104F /* Base */,
+				20AF693D1FB5FCBB00A31BBF /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		17E7550C1FACC4F50023104F /* LaunchScreen.storyboard */ = {
+		20AF69411FB5FCBC00A31BBF /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				17E7550D1FACC4F50023104F /* Base */,
+				20AF69421FB5FCBC00A31BBF /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -171,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		17E755101FACC4F50023104F /* Debug */ = {
+		20AF69451FB5FCBC00A31BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -219,7 +211,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -228,7 +220,7 @@
 			};
 			name = Debug;
 		};
-		17E755111FACC4F50023104F /* Release */ = {
+		20AF69461FB5FCBC00A31BBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -270,7 +262,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -278,32 +270,28 @@
 			};
 			name = Release;
 		};
-		17E755131FACC4F50023104F /* Debug */ = {
+		20AF69481FB5FCBC00A31BBF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 325SNGXV22;
-				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = "UITableView Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto2;
+				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.UITableView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		17E755141FACC4F50023104F /* Release */ = {
+		20AF69491FB5FCBC00A31BBF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 325SNGXV22;
-				INFOPLIST_FILE = "SwiftFMI-Auto/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				INFOPLIST_FILE = "UITableView Demo/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.spasbilyarski.SwiftFMIAuto2;
+				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.UITableView-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -313,25 +301,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		17E754FB1FACC4F40023104F /* Build configuration list for PBXProject "SwiftFMI-Auto" */ = {
+		20AF69301FB5FCBB00A31BBF /* Build configuration list for PBXProject "UITableView Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17E755101FACC4F50023104F /* Debug */,
-				17E755111FACC4F50023104F /* Release */,
+				20AF69451FB5FCBC00A31BBF /* Debug */,
+				20AF69461FB5FCBC00A31BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		17E755121FACC4F50023104F /* Build configuration list for PBXNativeTarget "SwiftFMI-Auto" */ = {
+		20AF69471FB5FCBC00A31BBF /* Build configuration list for PBXNativeTarget "UITableView Demo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				17E755131FACC4F50023104F /* Debug */,
-				17E755141FACC4F50023104F /* Release */,
+				20AF69481FB5FCBC00A31BBF /* Debug */,
+				20AF69491FB5FCBC00A31BBF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 17E754F81FACC4F40023104F /* Project object */;
+	rootObject = 20AF692D1FB5FCBB00A31BBF /* Project object */;
 }

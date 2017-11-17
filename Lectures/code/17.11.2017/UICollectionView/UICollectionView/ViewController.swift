@@ -22,10 +22,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         
         self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self
-        let flowLayout = UICollectionViewFlowLayout()
-        flowLayout.itemSize = CGSize(width: 166, height: 190)
         
-        self.viewCollection.collectionViewLayout = flowLayout
+        let layout = UPCarouselFlowLayout()
+        layout.itemSize = CGSize(width: 166, height: 190)
+        
+        self.viewCollection.collectionViewLayout = layout
     }
 
     override func didReceiveMemoryWarning() {

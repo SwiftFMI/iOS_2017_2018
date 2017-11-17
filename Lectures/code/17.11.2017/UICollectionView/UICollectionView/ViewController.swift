@@ -23,11 +23,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self
         
-        let layout = UPCarouselFlowLayout()
-        layout.itemSize = CGSize(width: 166, height: 190)
-        layout.scrollDirection = .horizontal      
         
-        self.viewCollection.collectionViewLayout = layout
+        let vegaScroll = VegaScrollFlowLayout()
+        vegaScroll.itemSize = CGSize(width: 320, height: 190)
+        
+        self.viewCollection.collectionViewLayout = vegaScroll
     }
 
     override func didReceiveMemoryWarning() {

@@ -11,14 +11,14 @@ import UIKit
 class ViewController: UIViewController, UICollectionViewDelegate {
     // MARK: properties
     @IBOutlet weak var viewCollection: UICollectionView!
-    var dataSource:MyCustomDataSource?
+    var dataSource:EmojiDataSource?
     
     // MARK: - UIViewCollection methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //add mock data
-        self.dataSource = MyCustomDataSource(items: 50)
+        self.dataSource = EmojiDataSource(items: EmojiCollection.emojis)
         
         self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self

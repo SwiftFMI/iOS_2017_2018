@@ -41,3 +41,31 @@ public class MyCustomDataSource:NSObject, UICollectionViewDataSource {
     }
     
 }
+
+//custom data source
+public class EmojiDataSource:NSObject, UICollectionViewDataSource {
+    
+    var items:[String]
+    init(items:[String]) {
+        self.items = items
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return items.count
+    }
+    
+    public func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell:ImageCell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTypeImage", for: indexPath) as! ImageCell
+        
+        let item = self.items[indexPath.row]
+        cell.image.image = UIImage(named: item)
+        
+        return cell
+    }
+    
+    public func get(itemAt indexPath:IndexPath) -> String {
+        let item = self.items[indexPath.row]
+        return item
+    }
+    
+}

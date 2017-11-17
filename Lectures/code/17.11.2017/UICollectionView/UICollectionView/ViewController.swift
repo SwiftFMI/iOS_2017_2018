@@ -8,23 +8,19 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource,
-UICollectionViewDelegate {
+class ViewController: UIViewController, UICollectionViewDelegate {
     // MARK: properties
     @IBOutlet weak var viewCollection: UICollectionView!
-    var items:[String] = []
+    var dataSource:MyCustomDataSource?
     
     // MARK: - UIViewCollection methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //add mock data
-        for i in 1 ... 50 {
-            items.append("Item #\(i)")
-        }
+        self.dataSource = MyCustomDataSource(items: 50)
         
-        //this is done through the Interface Builder
-        //self.viewCollection.dataSource = self
+        self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self
     }
 
@@ -32,29 +28,18 @@ UICollectionViewDelegate {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-    // MARK: - UICollectionViewDataSource methods
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return items.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTypeOne", for: indexPath)
-        
-        return cell
-    }
     
     // MARK: - UICollectionViewDelegate
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        //because we have no sections
-        let item = items[indexPath.row]
-        print("\(item) was selected.")
+        if let item = dataSource?.get(itemAt:indexPath) {
+            print("\(item) was selected.")
+        }
     }
     
     func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
-        //because we have no sections
-        let item = items[indexPath.row]
-        print("\(item) was deselected.")
+        if let item = dataSource?.get(itemAt:indexPath) {
+            print("\(item) was deselected.")
+        }
     }
 }
 

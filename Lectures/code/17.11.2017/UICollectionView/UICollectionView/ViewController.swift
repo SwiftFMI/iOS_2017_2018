@@ -25,6 +25,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         
         let layout = UPCarouselFlowLayout()
         layout.itemSize = CGSize(width: 166, height: 190)
+        layout.scrollDirection = .horizontal      
         
         self.viewCollection.collectionViewLayout = layout
     }

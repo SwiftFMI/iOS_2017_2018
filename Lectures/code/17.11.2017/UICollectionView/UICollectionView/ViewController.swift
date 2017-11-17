@@ -8,18 +8,24 @@
 
 import UIKit
 
-class ViewController: UIViewController, UICollectionViewDataSource {
-
+class ViewController: UIViewController, UICollectionViewDataSource,
+UICollectionViewDelegate {
+    // MARK: properties
     @IBOutlet weak var viewCollection: UICollectionView!
     var items:[String] = []
     
+    // MARK: - UIViewCollection methods
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //add mock data
-        for i in 1 ... 5 {
+        for i in 1 ... 50 {
             items.append("Item #\(i)")
         }
+        
+        //this is done through the Interface Builder
+        //self.viewCollection.dataSource = self
+        self.viewCollection.delegate = self
     }
 
     override func didReceiveMemoryWarning() {
@@ -27,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         // Dispose of any resources that can be recreated.
     }
 
-    // :MARK UICollectionViewDataSource methods
+    // MARK: - UICollectionViewDataSource methods
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return items.count
     }
@@ -36,6 +42,19 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cellTypeOne", for: indexPath)
         
         return cell
+    }
+    
+    // MARK: - UICollectionViewDelegate
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //because we have no sections
+        let item = items[indexPath.row]
+        print("\(item) was selected.")
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didDeselectItemAt indexPath: IndexPath) {
+        //because we have no sections
+        let item = items[indexPath.row]
+        print("\(item) was deselected.")
     }
 }
 

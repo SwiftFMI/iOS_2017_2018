@@ -23,11 +23,14 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self
         
+        let hexagon = PBJHexagonFlowLayout(itemsPerRow: 5)
+        hexagon.itemSize = CGSize(width: 166.0, height:192)
+        hexagon.sectionInset = UIEdgeInsets.zero
+        hexagon.headerReferenceSize = CGSize.zero
+        hexagon.footerReferenceSize = CGSize.zero
+        hexagon.scrollDirection = .vertical
         
-        let vegaScroll = VegaScrollFlowLayout()
-        vegaScroll.itemSize = CGSize(width: 320, height: 190)
-        
-        self.viewCollection.collectionViewLayout = vegaScroll
+        self.viewCollection.collectionViewLayout = hexagon
     }
 
     override func didReceiveMemoryWarning() {

@@ -18,6 +18,7 @@
 		207CE2A71FBF1F0300D37C09 /* UPCarouselFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CE2A61FBF1F0300D37C09 /* UPCarouselFlowLayout.swift */; };
 		207CE2A91FBF255C00D37C09 /* VegaScrollFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CE2A81FBF255C00D37C09 /* VegaScrollFlowLayout.swift */; };
 		207CE2AB1FBF2D1500D37C09 /* PBJHexagonFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CE2AA1FBF2D1500D37C09 /* PBJHexagonFlowLayout.swift */; };
+		207CE2AD1FC00F4400D37C09 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207CE2AC1FC00F4400D37C09 /* ScrollViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +35,7 @@
 		207CE2A61FBF1F0300D37C09 /* UPCarouselFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UPCarouselFlowLayout.swift; sourceTree = "<group>"; };
 		207CE2A81FBF255C00D37C09 /* VegaScrollFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VegaScrollFlowLayout.swift; sourceTree = "<group>"; };
 		207CE2AA1FBF2D1500D37C09 /* PBJHexagonFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PBJHexagonFlowLayout.swift; sourceTree = "<group>"; };
+		207CE2AC1FC00F4400D37C09 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 		207CE28D1FBED6E800D37C09 /* UICollectionView */ = {
 			isa = PBXGroup;
 			children = (
+				207CE2AC1FC00F4400D37C09 /* ScrollViewController.swift */,
 				207CE2AA1FBF2D1500D37C09 /* PBJHexagonFlowLayout.swift */,
 				207CE2A21FBF136500D37C09 /* UICollectionViewCells.swift */,
 				207CE28E1FBED6E800D37C09 /* AppDelegate.swift */,
@@ -158,6 +161,7 @@
 				207CE2AB1FBF2D1500D37C09 /* PBJHexagonFlowLayout.swift in Sources */,
 				207CE2911FBED6E800D37C09 /* ViewController.swift in Sources */,
 				207CE2A71FBF1F0300D37C09 /* UPCarouselFlowLayout.swift in Sources */,
+				207CE2AD1FC00F4400D37C09 /* ScrollViewController.swift in Sources */,
 				207CE2A91FBF255C00D37C09 /* VegaScrollFlowLayout.swift in Sources */,
 				207CE2A31FBF136500D37C09 /* UICollectionViewCells.swift in Sources */,
 				207CE28F1FBED6E800D37C09 /* AppDelegate.swift in Sources */,
@@ -301,6 +305,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L24TQ8W95;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.lecture.UICollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -316,6 +321,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2L24TQ8W95;
 				INFOPLIST_FILE = UICollectionView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.lecture.UICollectionView";
 				PRODUCT_NAME = "$(TARGET_NAME)";

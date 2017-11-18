@@ -23,14 +23,32 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         self.viewCollection.dataSource = self.dataSource
         self.viewCollection.delegate = self
         
-        let hexagon = PBJHexagonFlowLayout(itemsPerRow: 5)
-        hexagon.itemSize = CGSize(width: 166.0, height:192)
-        hexagon.sectionInset = UIEdgeInsets.zero
-        hexagon.headerReferenceSize = CGSize.zero
-        hexagon.footerReferenceSize = CGSize.zero
+        let hexagon = UICollectionViewFlowLayout()
+        hexagon.itemSize = CGSize(width: 160, height:90)
+//        hexagon.sectionInset = UIEdgeInsets.zero
+//        hexagon.headerReferenceSize = CGSize.zero
+//        hexagon.footerReferenceSize = CGSize.zero
         hexagon.scrollDirection = .vertical
         
+
+        
+        if #available(iOS 10.0, *) {
+            let refreshControl = UIRefreshControl()
+            let title = NSLocalizedString("PullToRefresh", comment: "Pull to refresh")
+            refreshControl.attributedTitle = NSAttributedString(string: title)
+            refreshControl.addTarget(self,
+                                     action: #selector(refreshOptions(sender:)),
+                                     for: .valueChanged)
+            self.viewCollection.refreshControl = refreshControl
+        }
+        
+        
         self.viewCollection.collectionViewLayout = hexagon
+    }
+    
+    @objc func refreshOptions(sender:UIRefreshControl) {
+        print("refresh")
+        sender.endRefreshing()
     }
 
     override func didReceiveMemoryWarning() {

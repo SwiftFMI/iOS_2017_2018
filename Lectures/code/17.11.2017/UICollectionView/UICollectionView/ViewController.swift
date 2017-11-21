@@ -24,11 +24,11 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         self.viewCollection.delegate = self
         
         let hexagon = UICollectionViewFlowLayout()
-        hexagon.itemSize = CGSize(width: 160, height:90)
+        hexagon.itemSize = CGSize(width: 160, height:190)
 //        hexagon.sectionInset = UIEdgeInsets.zero
 //        hexagon.headerReferenceSize = CGSize.zero
 //        hexagon.footerReferenceSize = CGSize.zero
-        hexagon.scrollDirection = .vertical
+        hexagon.scrollDirection = .horizontal
         
 
         

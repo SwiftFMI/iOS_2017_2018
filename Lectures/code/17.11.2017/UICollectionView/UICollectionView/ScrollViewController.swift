@@ -26,7 +26,7 @@ public class ScrollViewController : UIViewController, UIScrollViewDelegate {
     public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         print("Content offset: \(scrollView.contentOffset)")
     }
-    
+
     public func viewForZooming(in scrollView: UIScrollView) -> UIView? {
         return self.imageView
     }

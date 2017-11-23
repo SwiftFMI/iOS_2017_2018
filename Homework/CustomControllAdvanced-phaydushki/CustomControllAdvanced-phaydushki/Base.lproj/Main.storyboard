@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomControllAdvanced_phaydushki" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CN5-bb-0Mq" customClass="MeterCircularView" customModule="CustomControllAdvanced_phaydushki" customModuleProvider="target">
+                                <rect key="frame" x="47" y="135" width="280" height="280"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="CN5-bb-0Mq" secondAttribute="height" multiplier="1:1" id="8Cw-pO-W3x"/>
+                                    <constraint firstAttribute="width" constant="280" id="Xd3-IL-m5c"/>
+                                </constraints>
+                            </view>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Swt-Xe-KFj">
+                                <rect key="frame" x="45" y="455" width="284" height="31"/>
+                                <connections>
+                                    <action selector="valueChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="iIQ-Q2-5aX"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="CN5-bb-0Mq" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" multiplier="0.8" id="0uJ-1t-Bzm"/>
+                            <constraint firstItem="Swt-Xe-KFj" firstAttribute="width" secondItem="CN5-bb-0Mq" secondAttribute="width" id="6EB-9N-YYs"/>
+                            <constraint firstItem="Swt-Xe-KFj" firstAttribute="top" secondItem="CN5-bb-0Mq" secondAttribute="bottom" constant="40" id="hd7-T3-3da"/>
+                            <constraint firstItem="CN5-bb-0Mq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mlQ-Eg-nv6"/>
+                            <constraint firstItem="Swt-Xe-KFj" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="myQ-Xn-VU7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="meterCircularView" destination="CN5-bb-0Mq" id="88U-gH-jTv"/>
+                        <outlet property="slider" destination="Swt-Xe-KFj" id="9Kr-Sw-wtY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

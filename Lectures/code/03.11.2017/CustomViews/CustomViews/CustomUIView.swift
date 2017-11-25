@@ -9,6 +9,8 @@
 import UIKit
 
 class CustomUIView: UIView {
+    //TODO: add default properties
+    
     //used when initialised through code
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -27,5 +29,7 @@ class CustomUIView: UIView {
     override func draw(_ rect: CGRect) {
         super.draw(rect)
         //TODO: do the custom drawing
+        
+        
     }
 }

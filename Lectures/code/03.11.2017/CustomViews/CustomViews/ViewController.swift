@@ -10,9 +10,18 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var shapeView: ShapeUIView?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.shapeView = ShapeUIView.init(frame: CGRect(x:0, y:0, width: 300, height:300))
+        self.shapeView?.backgroundColor = .red
+        if let shapeView = self.shapeView {
+            self.view.addSubview(shapeView);
+        }
+        
     }
 
     override func didReceiveMemoryWarning() {

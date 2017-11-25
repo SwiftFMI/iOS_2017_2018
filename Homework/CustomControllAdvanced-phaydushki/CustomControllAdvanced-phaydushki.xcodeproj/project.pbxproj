@@ -12,7 +12,11 @@
 		1A3928251FB70131006E406B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3928231FB70131006E406B /* Main.storyboard */; };
 		1A3928271FB70131006E406B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A3928261FB70131006E406B /* Assets.xcassets */; };
 		1A39282A1FB70131006E406B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A3928281FB70131006E406B /* LaunchScreen.storyboard */; };
-		1ACB07B31FBB801800D182D6 /* CustomDownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB07B21FBB801800D182D6 /* CustomDownloadButton.swift */; };
+		1A77DE1E1FC741340034F54E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DE1D1FC741340034F54E /* MainViewController.swift */; };
+		1A77DE221FC829880034F54E /* GenericViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DE211FC829880034F54E /* GenericViewController.swift */; };
+		1A77DE241FC82E1D0034F54E /* DownloadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DE231FC82E1D0034F54E /* DownloadButton.swift */; };
+		1A77DE261FC9DCE70034F54E /* Rings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DE251FC9DCE70034F54E /* Rings.swift */; };
+		1A77DE281FC9ED360034F54E /* DashedPercentageMeter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A77DE271FC9ED360034F54E /* DashedPercentageMeter.swift */; };
 		1ACB07B51FBDDC3100D182D6 /* MeterCircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ACB07B41FBDDC3100D182D6 /* MeterCircularView.swift */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +28,11 @@
 		1A3928261FB70131006E406B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A3928291FB70131006E406B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A39282B1FB70131006E406B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1ACB07B21FBB801800D182D6 /* CustomDownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDownloadButton.swift; sourceTree = "<group>"; };
+		1A77DE1D1FC741340034F54E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		1A77DE211FC829880034F54E /* GenericViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenericViewController.swift; sourceTree = "<group>"; };
+		1A77DE231FC82E1D0034F54E /* DownloadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadButton.swift; sourceTree = "<group>"; };
+		1A77DE251FC9DCE70034F54E /* Rings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Rings.swift; sourceTree = "<group>"; };
+		1A77DE271FC9ED360034F54E /* DashedPercentageMeter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashedPercentageMeter.swift; sourceTree = "<group>"; };
 		1ACB07B41FBDDC3100D182D6 /* MeterCircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeterCircularView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -58,16 +66,36 @@
 		1A39281E1FB70131006E406B /* CustomControllAdvanced-phaydushki */ = {
 			isa = PBXGroup;
 			children = (
-				1A39281F1FB70131006E406B /* AppDelegate.swift */,
-				1A3928211FB70131006E406B /* ViewController.swift */,
-				1ACB07B21FBB801800D182D6 /* CustomDownloadButton.swift */,
-				1ACB07B41FBDDC3100D182D6 /* MeterCircularView.swift */,
+				1A77DE1F1FC741460034F54E /* Controllers */,
+				1A77DE201FC741540034F54E /* Controlls */,
 				1A3928231FB70131006E406B /* Main.storyboard */,
 				1A3928261FB70131006E406B /* Assets.xcassets */,
 				1A3928281FB70131006E406B /* LaunchScreen.storyboard */,
 				1A39282B1FB70131006E406B /* Info.plist */,
+				1A39281F1FB70131006E406B /* AppDelegate.swift */,
 			);
 			path = "CustomControllAdvanced-phaydushki";
+			sourceTree = "<group>";
+		};
+		1A77DE1F1FC741460034F54E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A77DE1D1FC741340034F54E /* MainViewController.swift */,
+				1A3928211FB70131006E406B /* ViewController.swift */,
+				1A77DE211FC829880034F54E /* GenericViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1A77DE201FC741540034F54E /* Controlls */ = {
+			isa = PBXGroup;
+			children = (
+				1ACB07B41FBDDC3100D182D6 /* MeterCircularView.swift */,
+				1A77DE251FC9DCE70034F54E /* Rings.swift */,
+				1A77DE271FC9ED360034F54E /* DashedPercentageMeter.swift */,
+				1A77DE231FC82E1D0034F54E /* DownloadButton.swift */,
+			);
+			path = Controlls;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,10 +170,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ACB07B31FBB801800D182D6 /* CustomDownloadButton.swift in Sources */,
+				1A77DE221FC829880034F54E /* GenericViewController.swift in Sources */,
+				1A77DE261FC9DCE70034F54E /* Rings.swift in Sources */,
+				1A77DE281FC9ED360034F54E /* DashedPercentageMeter.swift in Sources */,
 				1A3928221FB70131006E406B /* ViewController.swift in Sources */,
 				1A3928201FB70131006E406B /* AppDelegate.swift in Sources */,
 				1ACB07B51FBDDC3100D182D6 /* MeterCircularView.swift in Sources */,
+				1A77DE241FC82E1D0034F54E /* DownloadButton.swift in Sources */,
+				1A77DE1E1FC741340034F54E /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var customDownloadButton: CustomDownloadButton!
     @IBOutlet weak var meterCircularView: MeterCircularView!
     
     @IBOutlet weak var slider: UISlider!

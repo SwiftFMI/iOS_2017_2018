@@ -32,16 +32,13 @@ class ShapeUIView: UIView {
         
         //CoreGraphics way
         let cgContext = UIGraphicsGetCurrentContext()
-        if let context = cgContext {
-//            context.clear(rect)
-            context.setLineCap(.round)
-            context.setLineJoin(.round)
-            context.setStrokeColor(UIColor.blue.cgColor)
-            context.setLineWidth(lineWidth)
-            context.addArc(center: self.center, radius: (self.frame.width - lineWidth)/2, startAngle: 0, endAngle: 360, clockwise: false)
-
-            context.strokePath()
-        }
+        let lineWidth:CGFloat = 5
+        let circle = UIBezierPath(ovalIn: rect.insetBy(dx: lineWidth, dy: lineWidth))
+        circle.lineWidth = lineWidth
+        
+        UIColor.blue.setStroke()
+        
+        circle.stroke()
         
         
     }

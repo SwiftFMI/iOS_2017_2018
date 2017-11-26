@@ -10,6 +10,7 @@ import UIKit
 
 class CustomUIView: UIView {
     //TODO: add default properties
+
     
     //used when initialised through code
     public override init(frame: CGRect) {

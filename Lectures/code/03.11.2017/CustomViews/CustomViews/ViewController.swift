@@ -10,6 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var customView: CustomUIView!
+    
     var shapeView: ShapeUIView?
     
     override func viewDidLoad() {
@@ -21,6 +23,8 @@ class ViewController: UIViewController {
         if let shapeView = self.shapeView {
             self.view.addSubview(shapeView);
         }
+        
+        self.customView.backgroundColor = .green
         
     }
 

@@ -9,24 +9,6 @@
 import UIKit
 
 class Rings: UIView {
-
-    var firstDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var firstDashPath : UIBezierPath = UIBezierPath()
-    
-    var secondDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var secondDashPath : UIBezierPath = UIBezierPath()
-    
-    var thirdDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var thirdDashPath : UIBezierPath = UIBezierPath()
-    
-    var fourthDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var fourthDashPath : UIBezierPath = UIBezierPath()
-    
-    var fifthDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var fifthDashPath : UIBezierPath = UIBezierPath()
-    
-    var hackDashLayer : CAShapeLayer = CAShapeLayer.init();
-    var hackDashPath : UIBezierPath = UIBezierPath()
     
     override init(frame: CGRect)
     {
@@ -39,7 +21,10 @@ class Rings: UIView {
     }
     
     override func draw(_ rect: CGRect) {
-        
+        self.setupRings()
+    }
+    
+    func setupRings() -> Void {
         let frameWidth = frame.size.width
         let frameHeight = frame.size.height
         
@@ -51,27 +36,67 @@ class Rings: UIView {
         self.layer.masksToBounds = true
         
         
-        let step : CGFloat = 1.0/4.0 // whole circle di
-        let start : CGFloat = 0.0
+        let redPart : CGFloat = 0.2
+        let bluePart : CGFloat = 0.35
+        let greenPart : CGFloat = 0.15
+        let cyanPart : CGFloat = 0.3
+        
+        var redPartEnd : CGFloat = 0.2
+        var bluePartEnd : CGFloat = 0.35
+        var greenPartEnd : CGFloat = 0.15
+        var cyanPartEnd : CGFloat = 0.3
+        
+        var start : CGFloat = 0.0
         let circle : CGFloat = CGFloat.pi * 2.0
         let radius : CGFloat = frameWidth * 0.5 - arrowWidth;
         
-        self.setupDashLayer(dashLayer: firstDashLayer, path: firstDashPath,startAngle:start * circle,endAngle: CGFloat(start + step) * circle, center: arrowCenter, radius: radius,color: UIColor.red)
+        self.setupDashLayer(startAngle:start * circle,endAngle: CGFloat(start + redPart) * circle, center: arrowCenter, radius: radius,color: UIColor.red)
         
-        self.setupDashLayer(dashLayer: secondDashLayer, path: secondDashPath,startAngle: (start + step) * circle,endAngle:((start + step*2) * circle), center: arrowCenter, radius: radius,color: UIColor.green)
+        start += redPart
+        redPartEnd = start
+        self.setupDashLayer(startAngle:start * circle,endAngle:(start + greenPart) * circle, center: arrowCenter, radius: radius,color: UIColor.green)
         
-        self.setupDashLayer(dashLayer: thirdDashLayer, path: thirdDashPath,startAngle:(start + step*2) * circle,endAngle: ((start + step*3) * circle), center: arrowCenter, radius: radius,color: UIColor.blue)
+        start += greenPart
+        greenPartEnd = start
+        self.setupDashLayer(startAngle:start * circle,endAngle: ((start + bluePart) * circle), center: arrowCenter, radius: radius,color: UIColor.blue)
         
-        self.setupDashLayer(dashLayer: fourthDashLayer, path: fourthDashPath,startAngle:((start + step*3) * circle),endAngle: ((start + step*4) * circle), center: arrowCenter, radius: radius,color: UIColor.cyan)
+        start += bluePart
+        bluePartEnd = start
+        self.setupDashLayer(startAngle:start * circle,endAngle: ((start + cyanPart) * circle), center: arrowCenter, radius: radius,color: UIColor.cyan)
         
-//        self.setupDashLayer(dashLayer: fifthDashLayer, path: fifthDashPath,startAngle:((start + step*4) * circle),endAngle:((start + step*5) * circle), center: arrowCenter, radius: radius,color: UIColor.yellow)
+        start += cyanPart
+        cyanPartEnd = start
+        self.setupDashLayer(startAngle:0.0  * circle,endAngle:0.01 * circle, center: arrowCenter, radius: radius,color: UIColor.red)
         
-        self.setupDashLayer(dashLayer: hackDashLayer, path: hackDashPath,startAngle:((start + step*4) * circle),endAngle:((start + step*4.1) * circle), center: arrowCenter, radius: radius,color: UIColor.red)
+        self.setPercentageLabel(part: redPart, partEnd: redPartEnd, color: UIColor.orange)
+        self.setPercentageLabel(part: bluePart, partEnd: bluePartEnd, color: UIColor.orange)
+        self.setPercentageLabel(part: greenPart, partEnd: greenPartEnd, color: UIColor.orange)
+        self.setPercentageLabel(part: cyanPart, partEnd: cyanPartEnd, color: UIColor.orange)
+    }
+    
+    func setPercentageLabel(part : CGFloat,partEnd : CGFloat , color : UIColor) -> Void {
         
+        let circle : Double = Double.pi * 2.0
+        
+        let frameSizeHeight = Double((frame.size.height - 40)/2.0)
+        let frameSizeWidth = Double((frame.size.width - 40)/2.0)
+        let r = Double((frame.size.width - 55)/2)
+
+        let xz = r * cos(circle * Double(partEnd)) + frameSizeWidth;
+        let yz = r * sin(circle * Double(partEnd)) + frameSizeHeight;
+        
+        let label = UILabel.init(frame: CGRect.init(x: xz, y: yz, width: 30, height: 30))
+        label.text = String(format: "%.0f",part * 100)
+        label.textColor = UIColor.white
+        label.backgroundColor = color
+        label.textAlignment = NSTextAlignment.center
+        self.addSubview(label)
     }
 
-    
-    func setupDashLayer(dashLayer : CAShapeLayer, path : UIBezierPath,startAngle : CGFloat,endAngle : CGFloat , center : CGPoint, radius : CGFloat, color : UIColor) -> Void {
+    func setupDashLayer(startAngle : CGFloat,endAngle : CGFloat , center : CGPoint, radius : CGFloat, color : UIColor) -> Void {
+        
+        let dashLayer : CAShapeLayer = CAShapeLayer.init();
+        let path : UIBezierPath = UIBezierPath()
         
         path.addArc(withCenter: center, radius: radius, startAngle: startAngle, endAngle:endAngle, clockwise: true)
         dashLayer.path = path.cgPath

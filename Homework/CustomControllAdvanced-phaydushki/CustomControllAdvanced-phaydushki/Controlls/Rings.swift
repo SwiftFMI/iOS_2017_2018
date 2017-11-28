@@ -68,13 +68,13 @@ class Rings: UIView {
         cyanPartEnd = start
         self.setupDashLayer(startAngle:0.0  * circle,endAngle:0.01 * circle, center: arrowCenter, radius: radius,color: UIColor.red)
         
-        self.setPercentageLabel(part: redPart, partEnd: redPartEnd, color: UIColor.orange)
-        self.setPercentageLabel(part: bluePart, partEnd: bluePartEnd, color: UIColor.orange)
-        self.setPercentageLabel(part: greenPart, partEnd: greenPartEnd, color: UIColor.orange)
-        self.setPercentageLabel(part: cyanPart, partEnd: cyanPartEnd, color: UIColor.orange)
+        self.setPercentageLabel(part: redPart, partEnd: redPartEnd)
+        self.setPercentageLabel(part: bluePart, partEnd: bluePartEnd)
+        self.setPercentageLabel(part: greenPart, partEnd: greenPartEnd)
+        self.setPercentageLabel(part: cyanPart, partEnd: cyanPartEnd)
     }
     
-    func setPercentageLabel(part : CGFloat,partEnd : CGFloat , color : UIColor) -> Void {
+    func setPercentageLabel(part : CGFloat,partEnd : CGFloat) -> Void {
         
         let circle : Double = Double.pi * 2.0
         
@@ -88,7 +88,6 @@ class Rings: UIView {
         let label = UILabel.init(frame: CGRect.init(x: xz, y: yz, width: 30, height: 30))
         label.text = String(format: "%.0f",part * 100)
         label.textColor = UIColor.white
-        label.backgroundColor = color
         label.textAlignment = NSTextAlignment.center
         self.addSubview(label)
     }

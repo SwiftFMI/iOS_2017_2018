@@ -18,7 +18,7 @@ class MainViewController: UIViewController,UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
 
-//        data = ["meterViewController" : "Meter"]
+        self.title = "Custom Controlls"
         // Do any additional setup after loading the view.
     }
 

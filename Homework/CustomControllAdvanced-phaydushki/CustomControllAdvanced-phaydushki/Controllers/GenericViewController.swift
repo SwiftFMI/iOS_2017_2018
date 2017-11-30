@@ -12,6 +12,8 @@ class GenericViewController: UIViewController {
     
     var item : String = String()
     
+    lazy var slider : UISlider = UISlider()
+    lazy var percentageMeter : DashedPercentageMeter = DashedPercentageMeter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,19 +25,23 @@ class GenericViewController: UIViewController {
         case "Percetage meter" :
             title = item
             controllWidth = 200.0
-            let percentageMeter : DashedPercentageMeter = DashedPercentageMeter.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 - controllWidth/2.0, width: controllWidth, height: controllWidth))
+            percentageMeter = DashedPercentageMeter.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 - controllWidth/2.0, width: controllWidth, height: controllWidth))
+            view.backgroundColor = UIColor.black
             
+            slider = UISlider.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 + controllWidth, width: controllWidth, height: 40))
+            self.view.addSubview(slider)
+            slider.addTarget(self, action: #selector(slideValueChanged), for: UIControlEvents.valueChanged)
             self.view.addSubview(percentageMeter)
         case "Rings" :
             title = item
-            controllWidth = 200.0
+            controllWidth = 240.0
             let ringView : Rings = Rings.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 - controllWidth/2.0, width: controllWidth, height: controllWidth))
             
             self.view.addSubview(ringView)
+            
         case "Download Button" :
             title = item
-     
-            
+                 
             let downloadButton : DownloadButton = DownloadButton.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 - controllWidth/2.0, width: controllWidth, height: controllWidth))
 
             self.view.addSubview(downloadButton)
@@ -51,15 +57,9 @@ class GenericViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func slideValueChanged() -> Void {
+        
+        percentageMeter.updatePercentage(value: CGFloat(slider.value))
     }
-    */
 
 }

@@ -10,6 +10,8 @@ import UIKit
 
 class Rings: UIView {
     
+    let lineWidth : CGFloat = 50.0
+    
     override init(frame: CGRect)
     {
         super.init(frame: frame)
@@ -28,27 +30,26 @@ class Rings: UIView {
         let frameWidth = frame.size.width
         let frameHeight = frame.size.height
         
-        let arrowWidth : CGFloat = 30.0
+        let arrowWidth : CGFloat = lineWidth
         
         let arrowCenter = CGPoint(x: (frameWidth / 2.0 ), y:frameHeight / 2.0)
         
         self.layer.cornerRadius = frameHeight/2.0
         self.layer.masksToBounds = true
         
-        
         let redPart : CGFloat = 0.2
         let bluePart : CGFloat = 0.35
         let greenPart : CGFloat = 0.15
         let cyanPart : CGFloat = 0.3
         
-        var redPartEnd : CGFloat = 0.2
-        var bluePartEnd : CGFloat = 0.35
-        var greenPartEnd : CGFloat = 0.15
-        var cyanPartEnd : CGFloat = 0.3
+        var redPartEnd : CGFloat = 0.0
+        var bluePartEnd : CGFloat = 0.0
+        var greenPartEnd : CGFloat = 0.0
+        var cyanPartEnd : CGFloat = 0.0
         
         var start : CGFloat = 0.0
         let circle : CGFloat = CGFloat.pi * 2.0
-        let radius : CGFloat = frameWidth * 0.5 - arrowWidth;
+        let radius : CGFloat = frameWidth * 0.5 - arrowWidth/2.0;
         
         self.setupDashLayer(startAngle:start * circle,endAngle: CGFloat(start + redPart) * circle, center: arrowCenter, radius: radius,color: UIColor.red)
         
@@ -78,17 +79,18 @@ class Rings: UIView {
         
         let circle : Double = Double.pi * 2.0
         
-        let frameSizeHeight = Double((frame.size.height - 40)/2.0)
-        let frameSizeWidth = Double((frame.size.width - 40)/2.0)
-        let r = Double((frame.size.width - 55)/2)
+        let frameSizeHeight = Double((frame.size.height - lineWidth)/2.0)
+        let frameSizeWidth = Double((frame.size.width - lineWidth)/2.0)
+        let r = Double((frame.size.width - lineWidth)/2)
 
-        let xz = r * cos(circle * Double(partEnd)) + frameSizeWidth;
-        let yz = r * sin(circle * Double(partEnd)) + frameSizeHeight;
+        let xz : CGFloat = CGFloat(r * cos(circle * Double(partEnd)) + frameSizeWidth);
+        let yz : CGFloat = CGFloat(r * sin(circle * Double(partEnd)) + frameSizeHeight);
         
-        let label = UILabel.init(frame: CGRect.init(x: xz, y: yz, width: 30, height: 30))
+        let label = UILabel.init(frame: CGRect.init(x: xz, y: yz, width: lineWidth, height: lineWidth))
         label.text = String(format: "%.0f",part * 100)
         label.textColor = UIColor.white
         label.textAlignment = NSTextAlignment.center
+        label.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)
         self.addSubview(label)
     }
 
@@ -101,7 +103,7 @@ class Rings: UIView {
         dashLayer.path = path.cgPath
         dashLayer.fillColor = UIColor.clear.cgColor
         dashLayer.strokeColor = color.cgColor
-        dashLayer.lineWidth = 40.0
+        dashLayer.lineWidth = lineWidth
         dashLayer.lineCap = kCALineCapRound
         
         self.layer.addSublayer(dashLayer)

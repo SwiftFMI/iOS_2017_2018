@@ -95,27 +95,6 @@ class MeterCircularView: UIView {
  
     func valueChanged(value : Double) -> Void {
         
-//        arrowLayer.anchorPoint =  CGPoint(x: 0.5, y:1.0)
-        
-//        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation.z")
-//        rotationAnimation.toValue = 2*CGFloat.pi
-//        rotationAnimation.duration = 3
-//        rotationAnimation.fillMode = kCAFillModeForwards
-//        rotationAnimation.isRemovedOnCompletion = false
-//        arrowLayer.add(rotationAnimation, forKey: nil)
-
-        // Thasts how a point can follow a circle
-        /*
-        let r = Double((frame.size.width - 10)/2)
-        let xz = r * cos(Double.pi * (2.0 * value)) + Double(frame.size.width / 2.0);
-        let yz = r * sin(Double.pi * (2.0 * value)) + Double(frame.size.height / 2.0);
-        
-        arrowPath.move(to: CGPoint(x: (frame.size.width / 2.0 ) - 25.0, y: (frame.size.height / 2.0)))
-        arrowPath.addLine(to: CGPoint(x: xz, y: yz))
-        arrowPath.addLine(to: CGPoint(x: (frame.size.width / 2.0 ) + 25.0, y: (frame.size.height / 2.0)))
-        arrowPath.addLine(to: CGPoint(x: (frame.size.width / 2.0 ) - 25.0, y: (frame.size.height / 2.0)))
-        */
-//        arrowLayer.transform = CGAffineTransformMakeRotation(CGFloat(degrees * Double.pi/180));
         var normalizedValue = value - 0.5
         
         let maxAngle = 0.35

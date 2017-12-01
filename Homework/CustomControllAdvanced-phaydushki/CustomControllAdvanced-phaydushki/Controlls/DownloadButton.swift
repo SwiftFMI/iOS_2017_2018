@@ -140,7 +140,7 @@ class DownloadButton: UIButton {
         animation.fromValue = fromValue
         animation.toValue = toValue
         animation.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut)
-        circleLayer.strokeEnd = 1.0
+        circleLayer.strokeEnd = toValue
         
         CATransaction.setCompletionBlock {
             if (toValue == 1.0)

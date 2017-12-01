@@ -90,7 +90,7 @@ class Rings: UIView {
         label.text = String(format: "%.0f",part * 100)
         label.textColor = UIColor.white
         label.textAlignment = NSTextAlignment.center
-        label.font = UIFont.systemFont(ofSize: 16.0, weight: UIFont.Weight.regular)
+        label.font = UIFont.systemFont(ofSize: 26.0, weight: UIFont.Weight.regular)
         self.addSubview(label)
     }
 

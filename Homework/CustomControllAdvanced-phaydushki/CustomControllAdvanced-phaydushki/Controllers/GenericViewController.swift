@@ -35,6 +35,9 @@ class GenericViewController: UIViewController {
         case "Rings" :
             title = item
             controllWidth = 240.0
+
+            view.backgroundColor = UIColor.black
+
             let ringView : Rings = Rings.init(frame: CGRect.init(x: frame.size.width/2.0 - controllWidth/2.0, y: frame.size.height/2.0 - controllWidth/2.0, width: controllWidth, height: controllWidth))
             
             self.view.addSubview(ringView)

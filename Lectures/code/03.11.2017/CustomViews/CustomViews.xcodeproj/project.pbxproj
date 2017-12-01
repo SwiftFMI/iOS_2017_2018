@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		201CA3371FC97FD9005BAAA7 /* CustomUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CA3351FC97FD9005BAAA7 /* CustomUIView.swift */; };
+		201CA3381FC97FD9005BAAA7 /* ShapeUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 201CA3361FC97FD9005BAAA7 /* ShapeUIView.swift */; };
 		20F78AE41FAC808D00619336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F78AE31FAC808D00619336 /* AppDelegate.swift */; };
 		20F78AE61FAC808D00619336 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20F78AE51FAC808D00619336 /* ViewController.swift */; };
 		20F78AE91FAC808D00619336 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20F78AE71FAC808D00619336 /* Main.storyboard */; };
@@ -15,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		201CA3351FC97FD9005BAAA7 /* CustomUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomUIView.swift; sourceTree = "<group>"; };
+		201CA3361FC97FD9005BAAA7 /* ShapeUIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShapeUIView.swift; sourceTree = "<group>"; };
 		20F78AE01FAC808D00619336 /* CustomViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20F78AE31FAC808D00619336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20F78AE51FAC808D00619336 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,6 +58,8 @@
 		20F78AE21FAC808D00619336 /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
+				201CA3351FC97FD9005BAAA7 /* CustomUIView.swift */,
+				201CA3361FC97FD9005BAAA7 /* ShapeUIView.swift */,
 				20F78AE31FAC808D00619336 /* AppDelegate.swift */,
 				20F78AE51FAC808D00619336 /* ViewController.swift */,
 				20F78AE71FAC808D00619336 /* Main.storyboard */,
@@ -137,6 +143,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				20F78AE61FAC808D00619336 /* ViewController.swift in Sources */,
+				201CA3371FC97FD9005BAAA7 /* CustomUIView.swift in Sources */,
+				201CA3381FC97FD9005BAAA7 /* ShapeUIView.swift in Sources */,
 				20F78AE41FAC808D00619336 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

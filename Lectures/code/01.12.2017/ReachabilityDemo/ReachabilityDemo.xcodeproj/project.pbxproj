@@ -12,6 +12,8 @@
 		2086073B1FD1CD6F00188FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208607391FD1CD6F00188FED /* Main.storyboard */; };
 		2086073D1FD1CD6F00188FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2086073C1FD1CD6F00188FED /* Assets.xcassets */; };
 		208607401FD1CD6F00188FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2086073E1FD1CD6F00188FED /* LaunchScreen.storyboard */; };
+		208DF06E1FD224960076A419 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DF06D1FD224960076A419 /* Cell.swift */; };
+		96F8320854117026ACB9CE2E /* Pods_ReachabilityDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B944FF43A0BD20B2DC70E06 /* Pods_ReachabilityDemo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,10 @@
 		2086073C1FD1CD6F00188FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2086073F1FD1CD6F00188FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		208607411FD1CD6F00188FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		208DF06D1FD224960076A419 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = ../../ReachabilityDemo_/ReachabilityDemo/Cell.swift; sourceTree = "<group>"; };
+		3B944FF43A0BD20B2DC70E06 /* Pods_ReachabilityDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReachabilityDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		62AC77E3704B366994956970 /* Pods-ReachabilityDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo.release.xcconfig"; sourceTree = "<group>"; };
+		FBD28971D1BD93089914B622 /* Pods-ReachabilityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +35,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F8320854117026ACB9CE2E /* Pods_ReachabilityDemo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		091E95D344E010864F327583 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3B944FF43A0BD20B2DC70E06 /* Pods_ReachabilityDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		208607291FD1CD6F00188FED = {
 			isa = PBXGroup;
 			children = (
 				208607341FD1CD6F00188FED /* ReachabilityDemo */,
 				208607331FD1CD6F00188FED /* Products */,
+				41FE42827DD91DC4561A9A9E /* Pods */,
+				091E95D344E010864F327583 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +71,7 @@
 		208607341FD1CD6F00188FED /* ReachabilityDemo */ = {
 			isa = PBXGroup;
 			children = (
+				208DF06D1FD224960076A419 /* Cell.swift */,
 				208607351FD1CD6F00188FED /* AppDelegate.swift */,
 				208607371FD1CD6F00188FED /* ViewController.swift */,
 				208607391FD1CD6F00188FED /* Main.storyboard */,
@@ -64,6 +82,15 @@
 			path = ReachabilityDemo;
 			sourceTree = "<group>";
 		};
+		41FE42827DD91DC4561A9A9E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FBD28971D1BD93089914B622 /* Pods-ReachabilityDemo.debug.xcconfig */,
+				62AC77E3704B366994956970 /* Pods-ReachabilityDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +98,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 208607441FD1CD6F00188FED /* Build configuration list for PBXNativeTarget "ReachabilityDemo" */;
 			buildPhases = (
+				5FBD106E778A6F222E43C256 /* [CP] Check Pods Manifest.lock */,
 				2086072E1FD1CD6F00188FED /* Sources */,
 				2086072F1FD1CD6F00188FED /* Frameworks */,
 				208607301FD1CD6F00188FED /* Resources */,
+				F72C39A0AFF5920FFDA8929D /* [CP] Embed Pods Frameworks */,
+				C2DE7B61589FA3E6AC3FABB1 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +161,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5FBD106E778A6F222E43C256 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReachabilityDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C2DE7B61589FA3E6AC3FABB1 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F72C39A0AFF5920FFDA8929D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/PINCache/PINCache.framework",
+				"${BUILT_PRODUCTS_DIR}/PINOperation/PINOperation.framework",
+				"${BUILT_PRODUCTS_DIR}/PINRemoteImage/PINRemoteImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/Texture/AsyncDisplayKit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINOperation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PINRemoteImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AsyncDisplayKit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2086072E1FD1CD6F00188FED /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +230,7 @@
 			files = (
 				208607381FD1CD6F00188FED /* ViewController.swift in Sources */,
 				208607361FD1CD6F00188FED /* AppDelegate.swift in Sources */,
+				208DF06E1FD224960076A419 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +365,7 @@
 		};
 		208607451FD1CD6F00188FED /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FBD28971D1BD93089914B622 /* Pods-ReachabilityDemo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +381,7 @@
 		};
 		208607461FD1CD6F00188FED /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 62AC77E3704B366994956970 /* Pods-ReachabilityDemo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

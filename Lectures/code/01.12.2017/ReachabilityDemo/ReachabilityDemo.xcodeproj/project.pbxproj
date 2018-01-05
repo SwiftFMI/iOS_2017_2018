@@ -12,7 +12,7 @@
 		2086073B1FD1CD6F00188FED /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 208607391FD1CD6F00188FED /* Main.storyboard */; };
 		2086073D1FD1CD6F00188FED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2086073C1FD1CD6F00188FED /* Assets.xcassets */; };
 		208607401FD1CD6F00188FED /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2086073E1FD1CD6F00188FED /* LaunchScreen.storyboard */; };
-		208DF06E1FD224960076A419 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208DF06D1FD224960076A419 /* Cell.swift */; };
+		20E565BD1FD293A80068CC75 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20E565BC1FD293A70068CC75 /* Cell.swift */; };
 		96F8320854117026ACB9CE2E /* Pods_ReachabilityDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3B944FF43A0BD20B2DC70E06 /* Pods_ReachabilityDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,7 +24,7 @@
 		2086073C1FD1CD6F00188FED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2086073F1FD1CD6F00188FED /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		208607411FD1CD6F00188FED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		208DF06D1FD224960076A419 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Cell.swift; path = ../../ReachabilityDemo_/ReachabilityDemo/Cell.swift; sourceTree = "<group>"; };
+		20E565BC1FD293A70068CC75 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
 		3B944FF43A0BD20B2DC70E06 /* Pods_ReachabilityDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReachabilityDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		62AC77E3704B366994956970 /* Pods-ReachabilityDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo.release.xcconfig"; sourceTree = "<group>"; };
 		FBD28971D1BD93089914B622 /* Pods-ReachabilityDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReachabilityDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReachabilityDemo/Pods-ReachabilityDemo.debug.xcconfig"; sourceTree = "<group>"; };
@@ -71,7 +71,7 @@
 		208607341FD1CD6F00188FED /* ReachabilityDemo */ = {
 			isa = PBXGroup;
 			children = (
-				208DF06D1FD224960076A419 /* Cell.swift */,
+				20E565BC1FD293A70068CC75 /* Cell.swift */,
 				208607351FD1CD6F00188FED /* AppDelegate.swift */,
 				208607371FD1CD6F00188FED /* ViewController.swift */,
 				208607391FD1CD6F00188FED /* Main.storyboard */,
@@ -229,8 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				208607381FD1CD6F00188FED /* ViewController.swift in Sources */,
+				20E565BD1FD293A80068CC75 /* Cell.swift in Sources */,
 				208607361FD1CD6F00188FED /* AppDelegate.swift in Sources */,
-				208DF06E1FD224960076A419 /* Cell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,15 @@
+|name| github| fn | github homework
+dani ivanov - Scene96 - ??? https://github.com/Scene96/SwiftHW
+petar - pepincho - 45121 https://github.com/pepincho/Swift-and-iOS-Courses-FMI/tree/master/SegmentControl/SegmentControl
+daniel gospodinov - danielgospodinow - ???  https://github.com/danielgospodinow/Snake-View
+Boyan Vushkov - batebobo -  ??? https://github.com/batebobo/iOS-Homeworks
+Vladi Katrankiev - VladoKat - 81418  https://github.com/VladoKat/HomeworkSwift
+Pavlin Panayotov - pavlin-panayotov - ??? https://github.com/pavlin-panayotov/Swift-course-first-homework
+Maria Bozhkova - mariyasb - 81383 https://github.com/mariyasb/iosHomeworks
+Николина Гюрова -  - 61601 https://github.com/nikup/ios-course/tree/master/homework/01/CircularControl
+Росен -Rosenstoyanov - 45018 https://github.com/Rosenstoyanov/CircleProgressWidget
+petko -  phaydushki  - 80685
+
+hristokirilov7 - 71593
+valentinvarbanov - 62029 https://github.com/valentinvarbanov/UIControl_homework
+

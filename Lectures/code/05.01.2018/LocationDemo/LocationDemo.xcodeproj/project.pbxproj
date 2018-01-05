@@ -290,7 +290,7 @@
 				DEVELOPMENT_TEAM = 2L24TQ8W95;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.LocationDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.LocationDemo5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -305,7 +305,7 @@
 				DEVELOPMENT_TEAM = 2L24TQ8W95;
 				INFOPLIST_FILE = LocationDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.LocationDemo";
+				PRODUCT_BUNDLE_IDENTIFIER = "bg.uni-sofia.fmi.LocationDemo5";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

@@ -13,7 +13,7 @@ class DetailViewController: UICollectionViewController {
     func configureView() {
         // Update the user interface for the detail item.
         if let detail = detailItem {
-            
+            title = detail.title
         }
     }
 
@@ -23,7 +23,7 @@ class DetailViewController: UICollectionViewController {
         configureView()
     }
 
-    var detailItem: Any? {
+    var detailItem: Album? {
         didSet {
             // Update the view.
             configureView()

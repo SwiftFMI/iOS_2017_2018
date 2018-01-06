@@ -8,6 +8,10 @@ target 'FirebaseDemo' do
   # Pods for FirebaseDemo
   pod 'Firebase/Core'
   pod 'Firebase/Database'
+  # Authentication
+  pod 'Firebase/Auth'
+  # Storage
+  pod 'Firebase/Storage'
   
 
 end

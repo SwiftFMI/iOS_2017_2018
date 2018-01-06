@@ -14,6 +14,8 @@
 | 62103 |
 | 62050 |
 
+[Project Repository](https://github.com/SwiftFMI/2017_prj_eventy)
+
                      
 
 ### 100 Places
@@ -24,6 +26,10 @@
 |------:|
 | 80685 |
 
+[Project Repository](https://github.com/SwiftFMI/2017_prj_100_places)
+
+
+
 ### MamaWeather
 ---
 
@@ -32,6 +38,8 @@
 | 81383 |
 | 81227 |
 | 61601 |
+
+[Project Repository](https://github.com/SwiftFMI/2017_prj_mama_weather)
 
 ### GetLocal
 ---
@@ -43,6 +51,8 @@
 | 71584 |
 | 71593 |
 
+[Project Repository](https://github.com/SwiftFMI/2017_prj_get_local)
+
 ### ShuShu-Mushu
 ---
 
@@ -51,7 +61,9 @@
 | 81187 |
 | 81104 |
 | 81120 |
-| 81103 |       
+| 81103 |
+
+[Project Repository](https://github.com/SwiftFMI/2017_prj_shushu_mushu)       
 
 ### Kolibri CocoaPods library
 ---
@@ -59,6 +71,8 @@
 | ФН    |
 |------:|
 | 71467 |
+
+[Project Repository](https://github.com/azmedien/kolibri-ios)  
 
 ### SharedRide
 ---
@@ -68,6 +82,8 @@
 | 44714 |
 | 45018 |
 
+[Project Repository](https://github.com/SwiftFMI/2017_prj_shared_ride)
+
 ### ShuShu-Mushu - 2
 ---
 | ФН   |
@@ -75,6 +91,8 @@
 |81349 |
 |81267 |
 |61865 |
+
+[Project Repository](https://github.com/SwiftFMI/2017_prj_shushu_mushu_2)
 
 
 ### Tattoo AR
@@ -85,6 +103,7 @@
 | 71745 |
 | 81531 |
 
+[Project Repository](https://github.com/SwiftFMI/2017_prj_tattoo_ar)
                  
 
 

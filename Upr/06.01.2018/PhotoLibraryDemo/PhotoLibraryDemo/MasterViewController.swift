@@ -14,7 +14,9 @@ class MasterViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        PhotoLibrary.library.loadAlbums { [weak self] in
+            self?.tableView.reloadData()
+        }
         if let split = splitViewController {
             let controllers = split.viewControllers
             detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -53,6 +55,12 @@ class MasterViewController: UITableViewController {
         
         cell.titleLabel.text = album.title
         cell.subtitleLabel.text = String(album.photos.count)
+        
+        cell.albumThumbnailImageView.image = nil
+        
+        PhotoLibrary.requestThumbnail(for: album) { [weak cell] (image, info) in
+            cell?.albumThumbnailImageView.image = image
+        }
 
         return cell
     }

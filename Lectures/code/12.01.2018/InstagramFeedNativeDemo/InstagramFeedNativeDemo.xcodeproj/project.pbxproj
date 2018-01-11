@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		20631A9A2006B9E9004BCA41 /* InstagramFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20631A992006B9E9004BCA41 /* InstagramFeedViewController.swift */; };
+		20631A9C2006BA6C004BCA41 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20631A9B2006BA6C004BCA41 /* Model.swift */; };
+		20631A9E2006C5CE004BCA41 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20631A9D2006C5CE004BCA41 /* FeedViewCell.swift */; };
+		20631AA120078759004BCA41 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20631AA020078759004BCA41 /* WebKit.framework */; };
+		20631AA320078D51004BCA41 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20631AA220078D51004BCA41 /* WebViewViewController.swift */; };
 		208FE0B620037E8C00097E28 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FE0B520037E8C00097E28 /* AppDelegate.swift */; };
 		208FE0B820037E8C00097E28 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FE0B720037E8C00097E28 /* FirstViewController.swift */; };
 		208FE0BA20037E8C00097E28 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 208FE0B920037E8C00097E28 /* SecondViewController.swift */; };
@@ -16,6 +21,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		20631A992006B9E9004BCA41 /* InstagramFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstagramFeedViewController.swift; sourceTree = "<group>"; };
+		20631A9B2006BA6C004BCA41 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		20631A9D2006C5CE004BCA41 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
+		20631AA020078759004BCA41 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		20631AA220078D51004BCA41 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		208FE0B220037E8C00097E28 /* InstagramFeedNativeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstagramFeedNativeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		208FE0B520037E8C00097E28 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		208FE0B720037E8C00097E28 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -31,17 +41,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20631AA120078759004BCA41 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		20631A9F20078759004BCA41 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20631AA020078759004BCA41 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		208FE0A920037E8C00097E28 = {
 			isa = PBXGroup;
 			children = (
 				208FE0B420037E8C00097E28 /* InstagramFeedNativeDemo */,
 				208FE0B320037E8C00097E28 /* Products */,
+				20631A9F20078759004BCA41 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +83,10 @@
 				208FE0BE20037E8C00097E28 /* Assets.xcassets */,
 				208FE0C020037E8C00097E28 /* LaunchScreen.storyboard */,
 				208FE0C320037E8C00097E28 /* Info.plist */,
+				20631A992006B9E9004BCA41 /* InstagramFeedViewController.swift */,
+				20631A9B2006BA6C004BCA41 /* Model.swift */,
+				20631A9D2006C5CE004BCA41 /* FeedViewCell.swift */,
+				20631AA220078D51004BCA41 /* WebViewViewController.swift */,
 			);
 			path = InstagramFeedNativeDemo;
 			sourceTree = "<group>";
@@ -139,9 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20631AA320078D51004BCA41 /* WebViewViewController.swift in Sources */,
+				20631A9C2006BA6C004BCA41 /* Model.swift in Sources */,
 				208FE0BA20037E8C00097E28 /* SecondViewController.swift in Sources */,
+				20631A9E2006C5CE004BCA41 /* FeedViewCell.swift in Sources */,
 				208FE0B620037E8C00097E28 /* AppDelegate.swift in Sources */,
 				208FE0B820037E8C00097E28 /* FirstViewController.swift in Sources */,
+				20631A9A2006B9E9004BCA41 /* InstagramFeedViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

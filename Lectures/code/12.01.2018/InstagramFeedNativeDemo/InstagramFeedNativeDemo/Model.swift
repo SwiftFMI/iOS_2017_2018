@@ -8,9 +8,12 @@
 
 import Foundation
 
+//TODO: image dimentions MUST be in the model
 class FeedItem: Codable {
     var avatar:Avatar?
     var image:String?
+    var imageWidth: Int?
+    var imageHeight: Int?
     var likes:Int?
     var comments:[Comment]?
 }

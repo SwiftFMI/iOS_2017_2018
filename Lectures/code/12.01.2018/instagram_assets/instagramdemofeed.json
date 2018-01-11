@@ -5,6 +5,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_1.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -31,6 +33,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_2.jpg",
+		"imageWidth": 640,
+		"imageHeight": 640,
 		"likes": 123,
 		"comments": [
 			{
@@ -57,6 +61,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_3.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -83,6 +89,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_4.jpg",
+		"imageWidth": 1035,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -109,6 +117,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_5.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -135,6 +145,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_6.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -161,6 +173,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_7.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -187,6 +201,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_8.jpg",
+		"imageWidth": 1071,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -213,6 +229,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_9.jpg",
+		"imageWidth": 1024,
+		"imageHeight": 1280,
 		"likes": 123,
 		"comments": [
 			{
@@ -239,6 +257,8 @@
 			"url": "assets/nature_avatar.jpg"
 		},
 		"image": "assets/nature_10.jpg",
+		"imageWidth": 1080,
+		"imageHeight": 1080,
 		"likes": 123,
 		"comments": [
 			{

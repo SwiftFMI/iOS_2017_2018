@@ -1,0 +1,35 @@
+[
+{"avatar":{
+"name":"Nature",
+"url":"assets/nature_avatar.jpg"},
+"image":"assets/nature_1.jpg",
+"likes":123,
+"comments": [
+{"id":123,
+"text": "blq blq blq"},
+{"id":124,
+"text": "blq blq blq"},
+{"id":125,
+"text": "blq blq blq"},
+{"id":126,
+"text": "blq blq blq"}
+]
+}
+,
+{"avatar":{
+"name":"Nature",
+"url":"assets/nature_avatar.jpg"},
+"image":"assets/nature_2.jpg",
+"likes":123,
+"comments": [
+{"id":123,
+"text": "blq blq blq"},
+{"id":124,
+"text": "blq blq blq"},
+{"id":125,
+"text": "blq blq blq"},
+{"id":126,
+"text": "blq blq blq"}
+]
+}
+]

@@ -9,15 +9,22 @@
 import UIKit
 import WebKit
 
-class WebViewViewController: UIViewController {
+class WebViewViewController: UIViewController, UITabBarControllerDelegate {
     
     @IBOutlet weak var webView: WKWebView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        loadDefaultURL()
+    }
+    
+    func loadDefaultURL() {
+        let publicURL = "https://app.tobe-millionaire.com/"
+        let localURL = SERVER_ROOT + "demo/"
+        
         // Do any additional setup after loading the view.
-        let rq = URLRequest(url: URL(string:SERVER_ROOT + "demo/")!)
+        let rq = URLRequest(url: URL(string:publicURL)!)
         webView.load(rq)
     }
 
@@ -36,5 +43,20 @@ class WebViewViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        tabBarController?.delegate = self
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        tabBarController?.delegate = nil
+    }
+    
+    public func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+        if tabBarController.selectedIndex == 2 {
+            loadDefaultURL()
+        }
+    }
 }

@@ -45,7 +45,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="1468" y="378"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XZX-6h-1Hw">
@@ -62,7 +62,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="52C-pT-VRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="726" y="1106"/>
+            <point key="canvasLocation" x="726" y="-371"/>
         </scene>
         <!--Instagram-->
         <scene sceneID="MgZ-7i-lqd">
@@ -88,7 +88,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p1g-ad-Ctd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1572" y="1105.9970014992505"/>
+            <point key="canvasLocation" x="1553" y="-371"/>
         </scene>
         <!--Web View View Controller-->
         <scene sceneID="USi-Li-bO3">

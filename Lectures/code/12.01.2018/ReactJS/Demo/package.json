@@ -1,0 +1,39 @@
+{
+  "name": "instagram.fmi.demo",
+  "version": "1.0.0.0",
+  "description": "Instagram.FMI demo",
+  "main": "server.js",
+  "author": {
+    "name": "Instagram.FMI"
+  },
+  "scripts": {
+    "build": "webpack",
+    "test": "webpack-dev-server --hot --inline --colors --progress"
+  },
+  "dependencies": {
+    "@types/react": "15.0.21",
+    "@types/react-dom": "0.14.23",
+    "office-ui-fabric-react": "2.10.6",
+    "react": "15.4.2",
+    "react-dom": "15.4.2",
+    "ts-loader": "2.0.3",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "awesome-typescript-loader": "3.1.2",
+    "babel-cli": "6.24.0",
+    "babel-core": "6.24.0",
+    "babel-loader": "6.4.1",
+    "babel-preset-env": "1.3.2",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "6.23.0",
+    "css-loader": "^0.28.7",
+    "node-sass": "^4.5.3",
+    "sass-loader": "^6.0.6",
+    "source-map-loader": "0.2.1",
+    "style-loader": "^0.18.2",
+    "typescript": "2.2.2",
+    "webpack": "2.3.3",
+    "webpack-dev-server": "2.4.2"
+  }
+}

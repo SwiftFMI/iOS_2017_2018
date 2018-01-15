@@ -1,0 +1,160 @@
+<div class="article-wrapper">
+    <div class="user-details">
+        <div class="user-avatar">
+            <img class="avatar" src="/assets/images/001/avatar-user-001.jpg" alt="Demo User" />
+        </div>
+        <div class="user-names">
+            <div class="name">Demo User</div>
+            <div class="location">Sofia, Bulgaria</div>
+        </div>
+    </div>
+    <div class="article-image">
+        <img src="/assets/images/001/Image001.jpg" alt="Demo User" class="fmi-responsive" />
+    </div>
+    <div class="social-actions">
+        <div class="actions">
+            <a href="">
+                <span class="action-like"></span>
+            </a>
+            <a href="">
+                <span class="action-comment"></span>
+            </a>
+            <a href="">
+                <span class="action-share"></span>
+            </a>
+        </div>
+        <div>
+            13 Likes
+        </div>
+        <div class="comment">
+            My perfect day is starting...
+        </div>
+        <div class="comment">
+            <textarea rows="1" cols="50" placeholder="Add a comment..." class="add-comment"></textarea>
+        </div>
+    </div>
+</div>
+
+<style>
+    .article-wrapper {
+        clear: both;
+        border-radius: 3px;
+        border: 1px solid #e6e6e6;
+        padding-bottom: 10px;
+    }
+
+    .user-avatar {
+        float: left;
+    }
+
+    .user-names {
+        float: left;
+        margin-left: 10px;
+    }
+
+    .user-details {
+        margin: 10px;
+    }
+
+    .avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+
+    .name {
+        font-weight: 600;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding-left: 5px;
+        margin-left: -5px;
+    }
+
+    .location {
+        font-size: 12px;
+    }
+
+    .article-image {
+        clear: both;
+        margin-top: 10px;
+    }
+
+    .social-actions {
+        margin-left: 10px;
+        margin-top: 5px;
+    }
+
+    /*actions*/
+
+    .actions {
+        height: 30px;
+    }
+
+    .actions a {
+        margin-right: 10px;
+        height: 30px;
+    }
+
+    .action-like {
+        background-image: url("./assets/images/general/icons.png");
+        background-position: -182px -357px;
+        height: 4px;
+        width: 24px;
+        padding-left: 24px;
+        padding-bottom: 5px;
+    }
+
+    .action-comment {
+        background-image: url("./assets/images/general/icons.png");
+        background-position: 0 -383px;
+        height: 4px;
+        width: 24px;
+        padding-left: 24px;
+        padding-bottom: 5px;
+    }
+
+    .action-share {
+        background-image: url("./assets/images/general/icons.png");
+        background-position: -312px -357px;
+        height: 4px;
+        width: 24px;
+        padding-left: 24px;
+        padding-bottom: 5px;
+    }
+
+    /*end of actions*/
+
+    .fmi-responsive {
+        display: block;
+        max-width: 100%;
+        height: auto;
+
+    }
+
+    .comment {
+        background: 0 0;
+        border: none;
+        color: #686565;
+        font-size: 14px;
+        ;
+        height: 18px;
+        max-height: 80px;
+        outline: none;
+        padding: 0;
+        resize: none;
+    }
+
+    .add-comment {
+        background: 0 0;
+        border: none;
+        color: #262626;
+        font-size: inherit;
+        height: 18px;
+        max-height: 80px;
+        outline: none;
+        padding: 0;
+        resize: none;
+        margin-top: 5px;
+    }
+</style>

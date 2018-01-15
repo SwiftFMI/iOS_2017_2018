@@ -1,0 +1,14 @@
+﻿{
+  "compilerOptions": {
+    "outDir": "./assets/js",
+    "sourceMap": false,
+    "noImplicitAny": false,
+    "module": "commonjs",
+    "target": "es2015",
+    "jsx": "react",
+    "experimentalDecorators": true
+  },
+  "include": [
+    "./src/*"
+  ]
+}

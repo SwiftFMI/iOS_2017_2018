@@ -9,7 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "FeedCell"
-public let SERVER_ROOT = "http://192.168.0.108:8888/instagram/"
+public let SERVER_ROOT = "http://10.83.76.160:8888/instagram/"
 
 class InstagramFeedViewController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
@@ -39,7 +39,7 @@ class InstagramFeedViewController: UICollectionViewController, UICollectionViewD
         urlSession = URLSession.shared
         
         urlSession?.dataTask(with: rq, completionHandler: { [weak self] (data, response, error) in
-            guard error != nil else { print(error!); return }
+            guard error == nil else { print(error!); return }
             guard response != nil else { print("no response"); return }
             guard let data = data else { print("no data"); return }
             
